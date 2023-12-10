@@ -11,8 +11,11 @@ export const metadata:Metadata = {
 
 export default async function Blogs(){
 
+
+
   const blogs = await getBlogs();
 
+  console.log(blogs);
   return (
     <section className="w-full min-h-screen">
       <div className="max-w-7xl m-auto px-4 sm:px-6 lg:px-8  p-16 pb-sm:pb-12 8 flex flex-col space-y-6 mt-10 sm:mt-16 lg:mt-24">
