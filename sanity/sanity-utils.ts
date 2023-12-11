@@ -16,6 +16,7 @@ export async function getDestinations(): Promise<DestinationTypes[]> {
         
     }`;
     const data = await client.fetch(querry, { next: { revalidate: 3600 } });
+    console.log(data);
     return data;
 }
 
