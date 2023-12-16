@@ -27,7 +27,7 @@ const ImageCarousel = () => {
     ]
   }
   return (
-    <div className="w-full overflow-hidden pt-[4rem] sm:pt-[4.5rem]">
+    <div className="w-full overflow-hidden pt-[4rem] sm:pt-[4.5rem] h-full">
       <Slider {...settings}>
         <div className="w-full h-[300px] md:h-[400px] lg:h-[450px] sm:h-[350px] bg-inherit relative">
           <Image

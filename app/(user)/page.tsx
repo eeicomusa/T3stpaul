@@ -16,8 +16,8 @@ const Home = () => {
       <Safaris />
       <MombasaSafaris />
       <FlightSafaris />
-      <Destinations />
       <TestimonialCarousel />
+      <Destinations />
     </div>
   );
 };

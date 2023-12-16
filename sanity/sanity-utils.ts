@@ -28,8 +28,17 @@ export async function getDestination(slug: string): Promise<DestinationTypes> {
         name,
         content
     }`;
-  const data = await client.fetch(querry, { next: { revalidate: 3600 } });
-  return data;
+    try {
+      const data = await client.fetch(querry, { next: { revalidate: 3600 } });
+      return data;
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      return [];  // Return null if an error occurs.
+    
+    }
+
+  // const data = await client.fetch(querry, { next: { revalidate: 3600 } });
+  // return data;
 }
 
 //Fetch all blogs
@@ -47,7 +56,7 @@ export async function getBlogs(): Promise<BlogTypes[]> {
     }`;
     try {
       const data = await client.fetch(querry);
-      console.log("Data fetched:", data);
+      // console.log("Data fetched:", data);
       return data;
     } catch (error) {
       console.error("Error fetching data:", error);
