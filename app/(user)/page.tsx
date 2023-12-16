@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div className="bg-slate-50">
       <ImageCarousel />
-      {/* <ContactUsBanner /> */}
+      <ContactUsBanner /> 
       <Safaris />
       <MombasaSafaris />
       <FlightSafaris />

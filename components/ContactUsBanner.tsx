@@ -52,28 +52,6 @@ const ContactUsBanner = () => {
             </div>
           </div>
         </div>
-        <div className=" flex flex-col items-center py-8 pt-12">
-          <p className="text-center sm:text-start leading-normal text-gray-600 py-6 max-w-4xl">
-            To make a <span className="font-bold">Safari Resarvation</span>, or
-            simply you want to get in touch with us regarding our fantastic
-            collection of{" "}
-            <span className="font-bold underline decoration-[#ffc15c]">
-              KENYA ,TANZANIA, UGANDA & RWANDA Safaris
-            </span>{" "}
-            . Please do so at any given time. Our abled specialists will find
-            the <span className="font-bold">Perfect Tour</span> tailor-made for
-            you, whatever <span className="font-bold">Your Budget</span> is.
-            Speak to a member of our team and reserve a
-            <span className="font-bold"> Dream Gateway</span>.
-          </p>
-
-          <Link
-            href="/reservation"
-            className="border text-sm w-fit border-[#e3170a] py-2 px-4 outline-none hover:bg-transparent rounded-sm gap-2 hover:text-[#e3170a] flex flex-row items-center justify-center bg-[#e3170a] active:scale-95 text-white/90 duration-150 transition-all ease-out font-medium">
-            <p>Enquire Now</p>
-            <HiArrowCircleRight size={18} />
-          </Link>
-        </div>
       </article>
     // </section>
   );
