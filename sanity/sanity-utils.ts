@@ -33,7 +33,7 @@ export async function getDestination(slug: string): Promise<DestinationTypes> {
       return data;
     } catch (error) {
       console.error("Error fetching data:", error);
-      return [];  // Return null if an error occurs.
+     // return [];  // Return null if an error occurs.
     
     }
 
