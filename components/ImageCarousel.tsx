@@ -162,7 +162,7 @@ const ImageCarousel = () => {
           />
         </div>
       </Slider>
-      <ContactUsBanner />
+      {/* <ContactUsBanner /> */}
     </div>
   );
 };

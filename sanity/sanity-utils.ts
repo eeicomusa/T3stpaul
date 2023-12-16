@@ -54,14 +54,14 @@ export async function getBlogs(): Promise<BlogTypes[]> {
         _createdAt
 
     }`;
-    try {
+    //try {
       const data = await client.fetch(querry);
       // console.log("Data fetched:", data);
       return data;
-    } catch (error) {
-      console.error("Error fetching data:", error);
-      return []; 
-    }    
+   // } catch (error) {
+      //console.error("Error fetching data:", error);
+      //return []; 
+   // }    
 }
 
 //Fetch a single blog using a param slug

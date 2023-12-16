@@ -102,6 +102,14 @@ const flightsafaris = [
     location: "Maasai Mara National Park",
     alt: "ostrich",
   },
+  {
+    id: 2,
+    url: "/flight-safaris/maasai-mara-special",
+    imgUrl: "/flightsafaris/mara-special/ostrich.jpg",
+    title: "Maasai Mara Special (3 days)",
+    location: "Maasai Mara National Park",
+    alt: "ostrich",
+  },
 ];
 
 const mombasasafaris = [
@@ -112,6 +120,15 @@ const mombasasafaris = [
     title: "Dolphins Watching Tour",
     location: "Wasini Island Kenya",
     alt: "dolphins",
+  },
+  {
+    id: 2,
+    url: "/mombasa-tours/half-day-city-tour",
+    imgUrl: "/mombasa-tours/city-tour/wood.jpg",
+    title: "Mombasa City Half Day Tour",
+    location:
+      "Mombasa Old Town, Wood Carvings Center(Akamba), Crocodile Farm(Nyali)",
+    alt: "mombasa",
   },
   {
     id: 2,

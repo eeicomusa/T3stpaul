@@ -24,15 +24,6 @@ export default function MombasaSafaris() {
                   fill
                   className="rounded-t-md object-cover hover:grayscale transition-all filter duration-300 ease-out"
                 />
-
-                {/* Stars */}
-                <div className="p-1 absolute top-1 left-1 bg-white rounded-sm flex flex-row font-bold text-yellow">
-                  <HiStar size={14} />
-                  <HiStar size={14} />
-                  <HiStar size={14} />
-                  <HiStar size={14} />
-                  <HiStar size={14} />
-                </div>
               </div>
 
               {/* Description */}
@@ -48,6 +39,19 @@ export default function MombasaSafaris() {
                     {item.location}
                   </p>
                 </div>
+                <p style={{ width: '100%', height: 5, background: '#000' }} ></p>
+                {/* Stars */}
+                <div>
+                  <div className="p-1 bottom-3  rounded-sm flex flex-row font-bold text-yellow">
+                    <HiStar size={14} />
+                    <HiStar size={14} />
+                    <HiStar size={14} />
+                    <HiStar size={14} />
+                    <HiStar size={14} />
+                  </div>
+                  <p className="text-black/70">584 reviews</p>
+                </div>
+
               </div>
             </Link>
           ))}
