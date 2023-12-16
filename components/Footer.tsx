@@ -27,9 +27,11 @@ const Footer = () => {
               className="w-8 h-8 rounded-md relative cursor-pointer">
               <Image
                 src="/logo.jpg"
-                className="rounded-md object-contain"
+                className="rounded-md object-cover"
                 alt="paulosfaris"
-                fill
+                height={64}
+                width={54}
+                // fill
               />
             </Link>
             <h4 className="text-xl font-medium">About paulosafaris</h4>

@@ -31,8 +31,8 @@ const Navbar = () => {
             <Image
               src="/logo.jpg"
               alt="paulosafaris"
-              width={34}
-              height={34}
+              width={44}
+              height={54}
               className="object-contain cursor-pointer rounded-md"
             />
 

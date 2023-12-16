@@ -41,6 +41,21 @@ export default async function Blog({params}:{params:{slug:string}}){
           </div>
           <p className="text-gray-600">{blog.content}</p>
         </div>
+        <div className="max-w-4xl m-auto px-4 sm:px-6 lg:px-8  p-16 pb-8 sm:pb-12  flex flex-col space-y-6 mt-10 sm:mt-16 lg:mt-24">
+          <div className="p-4">
+            <div className="text-gray-600">
+              <label className="block text-gray-700 text-sm font-bold mb-2">Add Comment:</label>
+              <textarea
+                id="comment"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Type your comment..."
+              ></textarea>
+              <div className="flex justify-end mt-3">
+                <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-md">Add Comment</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     );
 }

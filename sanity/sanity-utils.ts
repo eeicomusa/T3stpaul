@@ -16,7 +16,6 @@ export async function getDestinations(): Promise<DestinationTypes[]> {
         
     }`;
     const data = await client.fetch(querry, { next: { revalidate: 3600 } });
-    console.log(data);
     return data;
 }
 
@@ -46,8 +45,14 @@ export async function getBlogs(): Promise<BlogTypes[]> {
         _createdAt
 
     }`;
-  const data = await client.fetch(querry, { next: { revalidate: 3600 } });
-  return data;
+    try {
+      const data = await client.fetch(querry);
+      console.log("Data fetched:", data);
+      return data;
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      return []; 
+    }    
 }
 
 //Fetch a single blog using a param slug

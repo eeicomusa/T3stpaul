@@ -66,21 +66,7 @@ export default async function Blogs() {
             </Link>
           ))}
         </article>
-        <div className="bg-white rounded-lg shadow-md overflow-hidden md:w-full">
-          <div className="p-4">
-            <div className="text-gray-600">
-              <label className="block text-gray-700 text-sm font-bold mb-2">Add Comment:</label>
-              <textarea
-                id="comment"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                placeholder="Type your comment..."
-              ></textarea>
-              <div className="flex justify-end mt-3">
-                <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-md">Add Comment</button>
-              </div>
-            </div>
-          </div>
-        </div>
+       
       </div>
     </section>
   );
