@@ -28,14 +28,14 @@ export async function getDestination(slug: string): Promise<DestinationTypes> {
         name,
         content
     }`;
-    try {
+   // try {
       const data = await client.fetch(querry, { next: { revalidate: 3600 } });
       return data;
-    } catch (error) {
-      console.error("Error fetching data:", error);
+    // } catch (error) {
+      //console.error("Error fetching data:", error);
      // return [];  // Return null if an error occurs.
     
-    }
+   // }
 
   // const data = await client.fetch(querry, { next: { revalidate: 3600 } });
   // return data;

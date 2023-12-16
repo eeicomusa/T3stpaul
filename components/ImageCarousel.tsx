@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick-theme.css'
 
 import Image from 'next/image';
 
+import ContactUsBanner from "./ContactUsBanner"
 const ImageCarousel = () => {
 
   const settings = {
@@ -161,6 +162,7 @@ const ImageCarousel = () => {
           />
         </div>
       </Slider>
+      <ContactUsBanner />
     </div>
   );
 };
