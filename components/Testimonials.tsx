@@ -75,7 +75,6 @@ export default function Testimonials() {
         {/* First Eclipse with Image */}
         <div className="absolute" style={{ width: '600px', height: '600px', clipPath: 'circle(50% at 50% 50%)', transform: 'translate(-30%, -50%)', zIndex: 1 }}>
           <img
-          
            src="/boat.jpg"
             alt="Eclipse"
             className="w-full h-full object-cover"
@@ -85,7 +84,7 @@ export default function Testimonials() {
         {/* Second Eclipse with Image */}
         <div className="absolute" style={{ width: '500px', height: '500px', clipPath: 'circle(50% at 50% 50%)', transform: 'translate(30%, 50%)', zIndex: 1 }}>
           <img
-            src="/Ellipse 52.png"
+            src="/Ellipsen.png"
             alt="Eclipse"
             className="w-full h-full object-cover"
           />
