@@ -7,7 +7,7 @@ const Banner = () =>{
     return (
       <section className="w-full sm:flex hidden bg-gradient-to-r from-[#29AB87] to-[#ffc15c]">
         <div
-          className="text-white flex gap-4 items-center justify-between font-medium py-[2px]
+          className="text-white flex gap-4 items-center justify-between font-medium py-4
               w-full max-w-7xl px-4 lg:px-8 mx-auto">
           <div className="flex items-center justify-start gap-4 w-full text-sm">
             <p className="flex items-center justify-center gap-1 ">
