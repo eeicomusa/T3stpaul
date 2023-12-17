@@ -5,7 +5,7 @@ const FloatingBanner = () => {
             <div className="text-center md:text-left space-y-4 w-full">
                 <div className="text-[40px] md:text-[64px] font-bold" style={{ fontFamily: "'Volkhov', serif" }}>Magical Kenya</div>
                 <div className="text-sm md:text-base font-semibold leading-6 md:leading-[25px] w-full md:w-[464px]">
-                    Discover the breathtaking landscapes of Kenya, from its vast savannas and rugged mountains to its abundant wildlife and pristine wilderness. Experience the adventure of a lifetime in Africa's vibrant heart.
+                    Discover the breathtaking landscapes of Kenya, from its vast savannas and rugged mountains to its abundant wildlife and pristine wilderness. Experience the adventure of a lifetime in Africa vibrant heart.
                 </div>
             </div>
             {/* Right side with feature cards */}
