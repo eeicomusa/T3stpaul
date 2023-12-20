@@ -7,17 +7,20 @@ import {
 } from "@/components";
 import FlightSafaris from "@/components/FlightSafaris";
 import MombasaSafaris from "@/components/MombasaSafaris";
+import MainPage from "@/components/MainPage";
+
 
 const Home = () => {
   return (
     <div className="bg-slate-50">
-      <ImageCarousel />
-      <ContactUsBanner /> 
+      {/* <ImageCarousel /> */}
+      <MainPage />
+      {/* <ContactUsBanner /> 
       <Safaris />
       <MombasaSafaris />
       <FlightSafaris />
       <TestimonialCarousel />
-      <Destinations />
+      <Destinations /> */}
     </div>
   );
 };
