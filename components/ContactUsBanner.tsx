@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { HiArrowCircleRight } from "react-icons/hi";
 import Image from "next/image";
+import { CiStar } from "react-icons/ci";
 const ContactUsBanner = () => {
   return (
     <div>
@@ -27,11 +28,7 @@ const ContactUsBanner = () => {
                     </figure>
                     <div className="card-content">
                         <div className="card-rating">
-                        {/* <ion-icon name="star" />
-                        <ion-icon name="star" />
-                        <ion-icon name="star" />
-                        <ion-icon name="star" />
-                        <ion-icon name="star" /> */}
+                            {/* <Cistar /> */}
                         </div>
                         <p className="card-subtitle">
                         <a href="#">Italy</a>

@@ -9,18 +9,20 @@ import FlightSafaris from "@/components/FlightSafaris";
 import MombasaSafaris from "@/components/MombasaSafaris";
 import MainPage from "@/components/MainPage";
 import Gallery from "@/components/Gallery";
+import Search from "@/components/Search";
 
 const Home = () => {
   return (
     <div className="bg-slate-50">
       <ImageCarousel />
-      <MainPage />
+      <Search />
        <ContactUsBanner /> 
       <Safaris />
       <MombasaSafaris />
-      <Gallery/>
+      <TestimonialCarousel />
       <FlightSafaris />
-      {/* <TestimonialCarousel /> */}
+      <MainPage />
+      <Gallery/>
      {/* <Destinations />  */}
     </div>
   );

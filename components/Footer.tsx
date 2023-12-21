@@ -13,6 +13,7 @@ import {
   BsInstagram,
   BsTiktok,
 } from "react-icons/bs";
+
 import { usePathname } from "next/navigation";
 
 const Footer = () => {

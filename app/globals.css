@@ -11,10 +11,10 @@ body, html{
 }
 
 .bg-yellow{
-  background-color:#ffc15c;
+  background-color:hsl(214, 72%, 33%);
 }
 .text-yellow{
-  color:#ffc15c;
+  color:hsl(214, 72%, 33%);
 }
 
 .bg-green{
