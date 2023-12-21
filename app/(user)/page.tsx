@@ -8,17 +8,18 @@ import {
 import FlightSafaris from "@/components/FlightSafaris";
 import MombasaSafaris from "@/components/MombasaSafaris";
 import MainPage from "@/components/MainPage";
-
+import Gallery from "@/components/Gallery";
 
 const Home = () => {
   return (
     <div className="bg-slate-50">
       <ImageCarousel />
       <MainPage />
-       {/* <ContactUsBanner />  */}
-      {/* <Safaris /> */}
+       <ContactUsBanner /> 
+      <Safaris />
       <MombasaSafaris />
-      {/* <FlightSafaris /> */}
+      <Gallery/>
+      <FlightSafaris />
       {/* <TestimonialCarousel /> */}
      {/* <Destinations />  */}
     </div>

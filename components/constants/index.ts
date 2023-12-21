@@ -90,9 +90,14 @@ const flightsafaris = [
     id: 1,
     url: "/flight-safaris/maasai-mara-amboseli",
     imgUrl: "/flightsafaris/amboseli-mara/elephant.jpg",
-    title: "Maasai Mara & Amboseli  (4 nights)",
+    title: "Maasai Mara & Amboseli (4 nights)",
     location: "Maasai Mara & Amboseli National Parks",
     alt: "elephants",
+    description: "Explore the stunning landscapes and incredible wildlife of Maasai Mara & Amboseli National Parks over 4 nights.",
+    duration: "5D/4N",
+    pax: 8,
+    reviews: 30,
+    price: 1200
   },
   {
     id: 2,
@@ -101,15 +106,25 @@ const flightsafaris = [
     title: "Maasai Mara Special (3 days)",
     location: "Maasai Mara National Park",
     alt: "ostrich",
+    description: "A special 3-day tour of the Maasai Mara, offering a unique opportunity to witness the diverse wildlife and breathtaking scenery.",
+    duration: "3D/2N",
+    pax: 10,
+    reviews: 45,
+    price: 950
   },
   {
-    id: 2,
+    id: 3,
     url: "/flight-safaris/maasai-mara-special",
     imgUrl: "/flightsafaris/mara-special/ostrich.jpg",
-    title: "Maasai Mara Special (3 days)",
-    location: "Maasai Mara National Park",
-    alt: "ostrich",
-  },
+    title: "Serengeti Adventure (5 days)",
+    location: "Serengeti National Park",
+    alt: "lion",
+    description: "Embark on a 5-day adventure in the vast plains of the Serengeti, home to a rich array of wildlife and breathtaking landscapes.",
+    duration: "5D/4N",
+    pax: 12,
+    reviews: 50,
+    price: 1350
+  }
 ];
 
 const mombasasafaris = [

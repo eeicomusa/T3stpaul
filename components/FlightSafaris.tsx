@@ -6,52 +6,73 @@ import { flightsafaris } from "./constants";
 
 export default function FlightSafaris() {
   return (
-    <section className="w-full">
-      <div className="max-w-7xl m-auto px-4 sm:px-6 lg:px-8 flex flex-col space-y-6 py-8 sm:py-16">
-        <h2 className="text-4xl">Flight Tours</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-6">
-          {/* card */}
+    <section className="package" id="package">
+      <div className="container">
+        <p className="section-subtitle">Popular Packages</p>
+        <h2 className="h2 section-title">Checkout Our Packages</h2>
+        <p className="section-text">
+          Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo,
+          rutrum. Vestibulum cumque laudantium. Sit ornare mollitia tenetur,
+          aptent.
+        </p>
+        <ul className="package-list">
           {flightsafaris.map((item) => (
-            <Link
-              key={item.id}
-              href={item.url}
-              className="cursor-pointer w-full flex flex-col gap-4 shadow-sm rounded-md bg-white">
-              {/* image */}
-              <div className="w-full relative h-[200px]">
-                <Image
-                  src={item.imgUrl}
-                  alt={item.alt}
-                  fill
-                  className="rounded-t-md object-cover hover:grayscale transition-all filter duration-300 ease-out"
-                />
-
-                {/* Stars */}
-                <div className="p-1 absolute top-1 left-1 bg-white rounded-sm flex flex-row font-bold text-yellow">
-                  <HiStar size={14} />
-                  <HiStar size={14} />
-                  <HiStar size={14} />
-                  <HiStar size={14} />
-                  <HiStar size={14} />
+            <li key={item.id}>
+              <div className="package-card">
+                <figure className="card-banner">
+                  <Image
+                    src={item.imgUrl}
+                    alt={item.alt}
+                    loading="lazy"
+                    width={500} height={200}
+                  />
+                </figure>
+                <div className="card-content">
+                  <h3 className="h3 card-title">{item.title}</h3>
+                  <p className="card-text">{item.description}</p>
+                  <ul className="card-meta-list">
+                    <li className="card-meta-item">
+                      <div className="meta-box">
+                        {/* <ion-icon name="time" /> */}
+                        <p className="text">{item.duration}</p>
+                      </div>
+                    </li>
+                    <li className="card-meta-item">
+                      <div className="meta-box">
+                        {/* <ion-icon name="people" /> */}
+                        <p className="text">pax: {item.pax}</p>
+                      </div>
+                    </li>
+                    <li className="card-meta-item">
+                      <div className="meta-box">
+                        {/* <ion-icon name="location" /> */}
+                        <p className="text">{item.location}</p>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-              </div>
-
-              {/* Description */}
-              <div className="flex flex-col gap-2 px-4 pb-6">
-                <h3 className=" text-xl text-green">{item.title}</h3>
-
-                {/* Location and price */}
-                <div className="flex flex-row justify-between items-center text-sm">
-                  <p className="text-black/70">
-                    <span className="inline-block mr-1">
-                      <HiLocationMarker size={14} />
-                    </span>
-                    {item.location}
+                <div className="card-price">
+                  <div className="wrapper">
+                    <p className="reviews">({item.reviews} reviews)</p>
+                    <div className="card-rating">
+                      <HiStar size={14}/>
+                      <HiStar size={14}/>
+                      <HiStar size={14}/>
+                      <HiStar size={14}/>
+                      <HiStar size={14}/>
+                    </div>
+                  </div>
+                  <p className="price">
+                    ${item.price}
+                    <span>/ per person</span>
                   </p>
+                  <button className="btn btn-secondary">Book Now</button>
                 </div>
               </div>
-            </Link>
+            </li>
           ))}
-        </div>
+        </ul>
+        <button className="btn btn-primary">View All Packages</button>
       </div>
     </section>
   );
