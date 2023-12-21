@@ -4,79 +4,9 @@ export default function MainPage () {
     return (
         <div>
         <article>
-            <section className="hero" id="home">
-            <div className="container">
-                <h2 className="h1 hero-title">Journey to explore world</h2>
-                <p className="hero-text">
-                Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit
-                class corporis nostra rem quos voluptatibus habitant? Fames, vivamus
-                minim nemo enim, gravida lobortis quasi, eum.
-                </p>
-                <div className="btn-group">
-                <button className="btn btn-primary">Learn more</button>
-                <button className="btn btn-secondary">Book now</button>
-                </div>
-            </div>
-            </section>
-            <section className="tour-search">
-            <div className="container">
-                <form action="" className="tour-search-form">
-                <div className="input-wrapper">
-                    <label htmlFor="destination" className="input-label">
-                    Search Destination*
-                    </label>
-                    <input
-                    type="text"
-                    name="destination"
-                    id="destination"
-                    //   required=""
-                    placeholder="Enter Destination"
-                    className="input-field"
-                    />
-                </div>
-                <div className="input-wrapper">
-                    <label htmlFor="people" className="input-label">
-                    Pax Number*
-                    </label>
-                    <input
-                    type="number"
-                    name="people"
-                    id="people"
-                    //   required=""
-                    placeholder="No.of People"
-                    className="input-field"
-                    />
-                </div>
-                <div className="input-wrapper">
-                    <label htmlFor="checkin" className="input-label">
-                    Checkin Date**
-                    </label>
-                    <input
-                    type="date"
-                    name="checkin"
-                    id="checkin"
-                    //   required=""
-                    className="input-field"
-                    />
-                </div>
-                <div className="input-wrapper">
-                    <label htmlFor="checkout" className="input-label">
-                    Checkout Date*
-                    </label>
-                    <input
-                    type="date"
-                    name="checkout"
-                    id="checkout"
-                    //   required=""
-                    className="input-field"
-                    />
-                </div>
-                <button type="submit" className="btn btn-secondary">
-                    Inquire now
-                </button>
-                </form>
-            </div>
-            </section>
+           
+           
+            
             <section className="popular" id="destination">
             <div className="container">
                 <p className="section-subtitle">Uncover place</p>
@@ -181,6 +111,7 @@ export default function MainPage () {
                 <button className="btn btn-primary">More destintion</button>
             </div>
             </section>
+
             {/* 
         - #PACKAGE
         */}
@@ -442,83 +373,6 @@ export default function MainPage () {
         </article>
         
         <div className="footer">
-  <div className="footer-top">
-    <div className="container">
-      <div className="footer-brand">
-        <a href="#" className="logo">
-          <Image src="/logo.svg" alt="Tourly logo" width={200} height={200}/>
-        </a>
-        <p className="footer-text">
-          Urna ratione ante harum provident, eleifend, vulputate molestiae proin
-          fringilla, praesentium magna conubia at perferendis, pretium, aenean
-          aut ultrices.
-        </p>
-      </div>
-      <div className="footer-contact">
-        <h4 className="contact-title">Contact Us</h4>
-        <p className="contact-text">Feel free to contact and reach us !!</p>
-        <ul>
-          <li className="contact-item">
-            {/* <ion-icon name="call-outline" /> */}
-            <a href="tel:+01123456790" className="contact-link">
-              +01 (123) 4567 90
-            </a>
-          </li>
-          <li className="contact-item">
-            {/* <ion-icon name="mail-outline" /> */}
-            <a href="mailto:info.tourly.com" className="contact-link">
-              info.tourly.com
-            </a>
-          </li>
-          <li className="contact-item">
-            {/* <ion-icon name="location-outline" /> */}
-            <address>3146 Koontz, California</address>
-          </li>
-        </ul>
-      </div>
-      <div className="footer-form">
-        <p className="form-text">
-          Subscribe our newsletter for more update &amp; news !!
-        </p>
-        <form action="" className="form-wrapper">
-          <input
-            type="email"
-            name="email"
-            className="input-field"
-            placeholder="Enter Your Email"
-            //required=""
-          />
-          <button type="submit" className="btn btn-secondary">
-            Subscribe
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-  <div className="footer-bottom">
-    <div className="container">
-      <p className="copyright">
-        © 2022 <a href="">codewithsadee</a>. All rights reserved
-      </p>
-      <ul className="footer-bottom-list">
-        <li>
-          <a href="#" className="footer-bottom-link">
-            Privacy Policy
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-bottom-link">
-            Term &amp; Condition
-          </a>
-        </li>
-        <li>
-          <a href="#" className="footer-bottom-link">
-            FAQ
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
 </div>
 
     </div>

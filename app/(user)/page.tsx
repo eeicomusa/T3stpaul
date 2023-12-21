@@ -13,14 +13,14 @@ import MainPage from "@/components/MainPage";
 const Home = () => {
   return (
     <div className="bg-slate-50">
-      {/* <ImageCarousel /> */}
+      <ImageCarousel />
       <MainPage />
-      {/* <ContactUsBanner /> 
-      <Safaris />
+       {/* <ContactUsBanner />  */}
+      {/* <Safaris /> */}
       <MombasaSafaris />
-      <FlightSafaris />
-      <TestimonialCarousel />
-      <Destinations /> */}
+      {/* <FlightSafaris /> */}
+      {/* <TestimonialCarousel /> */}
+     {/* <Destinations />  */}
     </div>
   );
 };
