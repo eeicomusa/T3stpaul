@@ -6,9 +6,15 @@ import 'slick-carousel/slick/slick-theme.css'
 import Image from 'next/image';
 import { getTestimonials } from "../sanity/sanity-utils";
 
+interface TestMonialTypes {
+  _id : string;
+  image: string;
+  message : string;
+  client: string;
+}
 const TestMonials = () => {
 
-  const [testimonials,setTestimonials] = useState([])
+  const [testimonials,setTestimonials] = useState<TestMonialTypes[]>([])
    useEffect(() => {
     const fetchTestimonials = async () => {
       const data = await getTestimonials();
