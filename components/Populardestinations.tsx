@@ -3,7 +3,7 @@ import React from "react";
 import { HiArrowCircleRight } from "react-icons/hi";
 import Image from "next/image";
 import { CiStar } from "react-icons/ci";
-const ContactUsBanner = () => {
+const PopularDestinations = () => {
   return (
     <div>
        <section className="popular" id="destination">
@@ -82,4 +82,4 @@ const ContactUsBanner = () => {
   );
 };
 
-export default ContactUsBanner;
+export default PopularDestinations;

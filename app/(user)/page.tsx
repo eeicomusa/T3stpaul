@@ -22,8 +22,7 @@ const Home = () => {
       <TestimonialCarousel />
       <FlightSafaris />
       <MainPage />
-      <Gallery/>
-     {/* <Destinations />  */}
+     <Destinations /> 
     </div>
   );
 };

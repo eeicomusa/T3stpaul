@@ -5,7 +5,7 @@ import Destinations from "./PreviewDestinations";
 import TestimonialCarousel from "./Testimonials";
 import Footer from "./Footer";
 import BannerFooter from "./BannerFooter";
-import ContactUsBanner from "./ContactUsBanner";
+import ContactUsBanner from "./Populardestinations";
 import Safaris from "./Safaris";
 
 export {

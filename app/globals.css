@@ -420,7 +420,7 @@ body { background: var(--white); }
 \*-----------------------------------*/
 
 .hero {
-  background-image: url("/hero-banner.jpg");
+  /* background-image: url("/sunset.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -433,12 +433,12 @@ body { background: var(--white); }
   padding-top: 125px;
 }
 
-.hero-title { margin-bottom: 20px; }
+.hero-title { margin-bottom: 5px; }
 
 .hero-text {
   color: var(--white);
   font-size: var(--fs-5);
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .btn-group {

@@ -3,11 +3,10 @@
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css'
-import FloatingBanner from "./FloatingBanner"
-
 import Image from 'next/image';
+import { slides } from "../components/constants/index";
 
-import ContactUsBanner from "./ContactUsBanner"
+
 const ImageCarousel = () => {
 
   const settings = {
@@ -27,161 +26,33 @@ const ImageCarousel = () => {
       }
     ]
   }
-  return (
-    // <section className="w-full overflow-hidden pt-[4rem] sm:pt-[4.5rem] h-full">
-    //   <div >
-    //     <Slider {...settings}>
-    //       <div className="w-full h-[300px] md:h-[400px] lg:h-[450px] sm:h-[350px] bg-inherit relative">
-    //         <Image
-    //           className="object-cover"
-    //           src="/carausel/wildebeasts.jpg"
-    //           fill
-    //           alt="wildebeasts"
-    //         />
-    //       </div>
-
-    //       <div className="w-full  h-[300px] md:h-[400px] lg:h-[450px]  sm:h-[350px]bg-inherit relative">
-    //         <Image
-    //           className="object-cover"
-    //           src="/carausel/zebras.jpg"
-    //           fill
-    //           alt="zebras"
-    //         />
-    //       </div>
-
-    //       <div className="w-full h-[300px] md:h-[400px] lg:h-[450px]  sm:h-[350px] bg-inherit relative">
-    //         <Image
-    //           className="object-cover"
-    //           src="/carausel/birds.jpg"
-    //           fill
-    //           alt="birds"
-    //         />
-    //       </div>
-
-    //       <div className="w-full  h-[300px] md:h-[400px] lg:h-[450px]  sm:h-[350px]bg-inherit relative">
-    //         <Image
-    //           className="object-cover"
-    //           src="/carausel/zebra.jpg"
-    //           fill
-    //           alt="zebras"
-    //         />
-    //       </div>
-
-    //       <div className="w-full h-[300px] md:h-[400px] lg:h-[450px] sm:h-[350px] bg-inherit relative">
-    //         <Image
-    //           className="object-cover"
-    //           src="/carausel/bufallo.jpg"
-    //           fill
-    //           alt="bufallos"
-    //         />
-    //       </div>
-
-    //       <div className="w-full  h-[300px] md:h-[400px] lg:h-[450px]  sm:h-[350px] relative">
-    //         <Image
-    //           className="object-cover"
-    //           src="/carausel/bird.jpg"
-    //           fill
-    //           alt="bird"
-    //         />
-    //       </div>
-
-    //       <div className="w-full  h-[300px] md:h-[400px] lg:h-[450px]  sm:h-[350px] relative">
-    //         <Image
-    //           className="object-cover"
-    //           src="/carausel/impalas.jpg"
-    //           fill
-    //           alt="impalas"
-    //         />
-    //       </div>
-
-    //       <div className="w-full h-[300px] md:h-[400px] lg:h-[450px]  sm:h-[350px] relative">
-    //         <Image
-    //           alt="animals"
-    //           src="/carausel/car.jpg"
-    //           className="object-cover"
-    //           fill
-    //         />
-    //       </div>
-
-    //       <div className="w-full  h-[300px] md:h-[400px] lg:h-[450px]  sm:h-[350px] relative">
-    //         <Image
-    //           className="object-cover"
-    //           src="/carausel/flamingos.jpg"
-    //           fill
-    //           alt="flamingos"
-    //         />
-    //       </div>
-
-    //       <div className="w-full  h-[300px] md:h-[400px] lg:h-[450px]  sm:h-[350px] relative">
-    //         <Image
-    //           className="object-cover"
-    //           src="/carausel/elephant.jpg"
-    //           fill
-    //           alt="elephants"
-    //         />
-    //       </div>
-
-    //       <div className="w-full  h-[300px] md:h-[400px] lg:h-[450px]  sm:h-[350px] relative">
-    //         <Image
-    //           className="object-cover"
-    //           src="/carausel/lions.jpg"
-    //           fill
-    //           alt="lions"
-    //         />
-    //       </div>
-    //       <div className="w-full  h-[300px] md:h-[400px] lg:h-[450px]  sm:h-[350px] relative">
-    //         <Image
-    //           className="object-cover"
-    //           src="/carausel/hotel.jpg"
-    //           fill
-    //           alt="hotel"
-    //         />
-    //       </div>
-    //       <div className="w-full  h-[300px] md:h-[400px] lg:h-[450px]  sm:h-[350px] relative">
-    //         <Image
-    //           className="object-cover"
-    //           src="/carausel/rhino.jpg"
-    //           fill
-    //           alt="rhinos"
-    //         />
-    //       </div>
-    //       <div className="w-full  h-[300px] md:h-[400px] lg:h-[450px]  sm:h-[350px] relative">
-    //         <Image
-    //           className="object-cover"
-    //           src="/carausel/wilddogs.jpg"
-    //           fill
-    //           alt="wilddogs"
-    //         />
-    //       </div>
-
-    //       <div className="w-full  h-[300px] md:h-[400px] lg:h-[450px]  sm:h-[350px] relative">
-    //         <Image
-    //           className="object-cover"
-    //           src="/carausel/elephants.jpg"
-    //           fill
-    //           alt="elephants"
-    //         />
-    //       </div>
-    //     </Slider>
-    //   </div>
-    //   <div className="flex justify-center ">
-    //     <FloatingBanner />
-    //   </div>
-    // </section>
-     <section className="hero" id="home">
-            <div className="container">
-                <h2 className="h1 hero-title">Journey to explore world</h2>
+ return (
+    <section id="home" className="w-full overflow-hidden pt-[4rem] sm:pt-[4.5rem] h-full">
+      <Slider {...settings}>
+        {slides.map((slide, index) => (
+          <div key={index} className="w-full h-[300px] md:h-[400px] lg:h-[450px] sm:h-[350px] relative">
+            <Image
+              className="object-cover"
+              src={slide.src}
+              fill
+              alt={slide.alt}
+            />
+            <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-center bg-opacity-50 bg-black text-white">
+              <div>
+                <h2 className="h1 hero-title">{slide.title || "Journey to explore world"}</h2>
                 <p className="hero-text">
-                Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit
-                class corporis nostra rem quos voluptatibus habitant? Fames, vivamus
-                minim nemo enim, gravida lobortis quasi, eum.
+                  {slide.description || "Default description..."}
                 </p>
                 <div className="btn-group">
-                <button className="btn btn-primary">Learn more</button>
-                <button className="btn btn-secondary">Book now</button>
+                  <button className="btn btn-primary">Learn more</button>
+                  <button className="btn btn-secondary">Book now</button>
                 </div>
+              </div>
             </div>
-      </section>
+          </div>
+        ))}
+      </Slider>
+    </section>
   );
 };
 

@@ -592,4 +592,50 @@ export {
   bannerfooterlinks,
   mombasasafaris,
   flightsafaris,
+  slides
 };
+
+const slides = [
+  {
+    src: "/carausel/elephants.jpg",
+    alt: "elephants",
+    title: "The Majestic Red Elephants",
+    description: "Behold the awe-inspiring beauty of the red elephants, uniquely colored due to the red soil of their natural habitat. Embark on a journey with us to witness these magnificent creatures in their natural environment, offering a once-in-a-lifetime experience that blends adventure with the serenity of nature."
+  },
+  {
+    src: "/carausel/wildebeasts.jpg",
+    alt: "wildebeasts",
+    title: "Witness the Great Wildebeest Migration",
+    description: "Join us to experience the spectacular natural phenomenon of the wildebeest migration. This breathtaking event, featuring thousands of wildebeests crossing rivers and plains, is a testament to the wonders of the wild. It's an unmissable spectacle for nature enthusiasts and photographers alike."
+  },
+  {
+    src: "/carausel/birds.jpg",
+    alt: "birds",
+    title: "Birdwatcher's Paradise",
+    description: "Discover the vibrant and diverse world of exotic birds in their natural habitats. Our tailored bird-watching tours are perfect for both novice enthusiasts and seasoned ornithologists looking to add rare sightings to their life lists."
+  },
+  {
+    src: "/carausel/bufallo.jpg",
+    alt: "buffalo",
+    title: "The Mighty Buffaloes",
+    description: "Experience the thrill of seeing herds of powerful buffaloes roaming freely in the wild. Our guided tours provide a safe and enriching way to observe these magnificent beasts and learn about their role in the ecosystem."
+  },
+  {
+    src: "/carausel/flamingos.jpg",
+    alt: "flamingos",
+    title: "The Flamboyant Flamingos",
+    description: "Be mesmerized by the stunning sight of flamingos painting the lakes pink. This tour offers a serene yet colorful journey into the world of these elegant birds, ideal for families and photography enthusiasts."
+  },
+  {
+    src: "/carausel/car.jpg",
+    alt: "safari vehicle",
+    title: "Adventure on Wheels",
+    description: "Embark on an exhilarating safari adventure in our top-of-the-line vehicles. Enjoy the comfort and safety of our cars as you traverse through the wild, getting up close with nature and its inhabitants."
+  },
+  {
+    src: "/carausel/hotel.jpg",
+    alt: "Visit the best Hotels",
+    title: "Stay in Luxury",
+    description: "After a day of adventure, relax in the finest hotels offering exceptional service and comfort. Our selected accommodations provide the perfect setting to unwind, with stunning views and world-class amenities."
+  }
+];
