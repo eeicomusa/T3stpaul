@@ -3,24 +3,27 @@ import React from "react";
 import { HiStar } from "react-icons/hi";
 import Image from "next/image";
 import { CiStar } from "react-icons/ci";
+import {kenyaTouristDestinations} from "../components/constants/index"
 const PopularDestinations = () => {
   return (
     <div>
        <section className="popular" id="destination">
+       
             <div className="container">
-                <p className="section-subtitle">Uncover place</p>
-                <h2 className="h2 section-title">Popular destination</h2>
+                <h2 className="h2 section-title">Magical Kenya</h2>
+                <p className="section-subtitle">Popular Destinations</p>
                 <p className="section-text">
                 </p>
-                <ul className="popular-list">
-                <li>
+                <ul    className="popular-list">
+                 {kenyaTouristDestinations.map((destination,index) =>(
+                <li key={index}>
                     <div className="popular-card">
                     <figure className="card-img">
                         <Image
-                        src="/popular-1.jpg"
+                        src={destination.image}
                         alt="San miguel, italy"
                         loading="lazy"
-                        width={500} height={200}
+                        width={200} height={200}
                         />
                     </figure>
                     <div className="card-content">
@@ -29,81 +32,23 @@ const PopularDestinations = () => {
                     <HiStar size={14} />
                     <HiStar size={14} />
                     <HiStar size={14} />
-                    <HiStar size={14} />{/* <Cistar /> */}
+                    <HiStar size={14} />
                         </div>
                         <p className="card-subtitle">
-                        <a href="#">Italy</a>
+                        <a href="#">{destination.city}</a>
                         </p>
                         <h3 className="h3 card-title">
-                        <a href="#">San miguel</a>
+                        <a href="#">{destination.city}</a>
                         </h3>
                         <p className="card-text">
-                        Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
+                      {destination.description}
                         </p>
                     </div>
                     </div>
                 </li>
-                <li>
-                    <div className="popular-card">
-                    <figure className="card-img">
-                        <Image
-                        src="/popular-2.jpg"
-                        alt="Burj khalifa, dubai"
-                        loading="lazy" height={200}
-                        width={500}
-                        />
-                    </figure>
-                    <div className="card-content">
-                        <div className="card-rating">
-                             <HiStar size={14} />
-                    <HiStar size={14} />
-                    <HiStar size={14} />
-                    <HiStar size={14} />
-                    <HiStar size={14} />
-                        </div>
-                        <p className="card-subtitle">
-                        <a href="#">Dubai</a>
-                        </p>
-                        <h3 className="h3 card-title">
-                        <a href="#">Burj khalifa</a>
-                        </h3>
-                        <p className="card-text">
-                        Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                        </p>
-                    </div>
-                    </div>
-                </li>
-                <li>
-                    <div className="popular-card">
-                    <figure className="card-img">
-                        <Image
-                        src="/popular-2.jpg"
-                        alt="Burj khalifa, dubai"
-                        loading="lazy" height={200}
-                        width={500}
-                        />
-                    </figure>
-                    <div className="card-content">
-                        <div className="card-rating">
-                         <HiStar size={14} />
-                    <HiStar size={14} />
-                    <HiStar size={14} />
-                    <HiStar size={14} />
-                    <HiStar size={14} />
-                        </div>
-                        <p className="card-subtitle">
-                        <a href="#">Dubai</a>
-                        </p>
-                        <h3 className="h3 card-title">
-                        <a href="#">Burj khalifa</a>
-                        </h3>
-                        <p className="card-text">
-                        Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                        </p>
-                    </div>
-                    </div>
-                </li>
-                </ul>
+                 ))}
+                 </ul>
+               
                 <button className="btn btn-primary">More destintion</button>
             </div>
             </section>

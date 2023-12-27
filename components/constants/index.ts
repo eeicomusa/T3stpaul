@@ -623,46 +623,40 @@ const slides = [
 
 const kenyaTouristDestinations = [
   {
-    image: "/images/maasai-mara.jpg",
-    destination: "Maasai Mara National Reserve",
-    city: "Narok",
-    description: "Famed for its exceptional population of lions, leopards, cheetahs, and its annual migration of zebra, Thomson's gazelle, and wildebeest to and from the Serengeti every year from July to October, known as the Great Migration."
-  },
-  {
-    image: "/images/amboseli-national-park.jpg",
+    image: "/previewDestinations/amboseli.jpg",
     destination: "Amboseli National Park",
     city: "Kajiado",
     description: "Known for its large elephant herds and views of immense Mount Kilimanjaro, across the border in Tanzania."
   },
   {
-    image: "/images/lake-nakuru.jpg",
+    image: "/previewDestinations/nairobi.jpg",
+    destination: "Nairobi National Park",
+    city: "Nairobi",
+    description: "A unique ecosystem where visitors can enjoy a safari experience against a backdrop of the city skyline, home to a variety of wildlife including lions, giraffes, and rhinos."
+  },
+  {
+    image: "/previewDestinations/mara.jpg",
+    destination: "Maasai Mara National Reserve",
+    city: "Narok",
+    description: "Famed for its exceptional population of lions, leopards, cheetahs, and its annual migration of zebra, Thomson's gazelle, and wildebeest to and from the Serengeti every year from July to October, known as the Great Migration."
+  },
+  {
+    image: "/previewDestinations/nakuru.jpg",
     destination: "Lake Nakuru National Park",
     city: "Nakuru",
     description: "Famous for its huge flocks of pink flamingos. The bird life here is world-renowned and offers over 400 species of both aquatic and terrestrial birds."
   },
   {
-    image: "/images/tsavo-east.jpg",
-    destination: "Tsavo East National Park",
-    city: "Voi",
-    description: "One of the oldest and largest parks in Kenya. Known for its vast area, diversity of wildlife, and the Yatta Plateau, the world's longest lava flow."
+    image: "/previewDestinations/serengeti.jpg",
+    destination: "Serengeti National Park",
+    city: "Across the border in Tanzania",
+    description: "Renowned for its large lion population and is one of the best places to observe prides in their natural environment. It's also home to the spectacular annual wildebeest migration."
   },
   {
-    image: "/images/mount-kenya.jpg",
-    destination: "Mount Kenya National Park",
-    city: "Nanyuki",
-    description: "Home to the second-highest peak in Africa, Mount Kenya. It is an important water tower in the country and offers a unique ecosystem with varied flora and fauna."
-  },
-  {
-    image: "/images/lamu.jpg",
-    destination: "Lamu Old Town",
-    city: "Lamu",
-    description: "A UNESCO World Heritage Site, Lamu Old Town is Kenya's oldest continually inhabited settlement with origins dating back to the 12th century."
-  },
-  {
-    image: "/images/diani-beach.jpg",
-    destination: "Diani Beach",
-    city: "Kwale",
-    description: "A pristine and scenic beach stretch on the Indian Ocean coast, popular for its soft white sands and turquoise waters."
+    image: "/previewDestinations/twest.jpg", //Tsavo West
+    destination: "Tsavo West National Park",
+    city: "Tsavo",
+    description: "Known for its red elephants, diverse landscapes, and the Mzima Springs where visitors can see hippos and crocodiles."
   }
 ];
 
