@@ -7,17 +7,23 @@ import { TestimonialsTypes } from "@/types/TestimonialTypes";
 
 
 //Fetch all destinations
-export async function getDestinations(): Promise<DestinationTypes[]> {
-    const querry = groq`*[_type == "destination"]{
+export async function getDestinations() : Promise<DestinationTypes[]>  {
+    const query = groq`*[_type == "destination"]{
         _id,
         name,
-        "slug":slug.current,
+        "slug": slug.current,
         "image": image.asset->url
-        
     }`;
-    const data = await client.fetch(querry, { next: { revalidate: 3600 } });
-    return data;
+
+    try {
+        const data = await client.fetch(query);
+        return data;
+    } catch (error) {
+        console.error("Error fetching destinations:", error);
+        return []; // Return an empty array in case of error
+    }
 }
+
 
 //Fetch a single destination using a slug param
 export async function getDestination(slug: string): Promise<DestinationTypes> {
@@ -95,13 +101,19 @@ export async function getTeam() : Promise<TeamTypes[]>{
 
 //Fetch Testimonials
 
-export async function getTestimonials() : Promise<TestimonialsTypes[]>{
-    const querry = groq`*[_type == 'testimonial']{
+export async function getTestimonials() {
+    const query = groq`*[_type == 'testimonial']{
         _id,
         "image": image.asset->url,
         message,
         client
     }`;
-    const data = client.fetch(querry);
-    return data;
+
+    try {
+        const data = await client.fetch(query);
+        return data;
+    } catch (error) {
+        console.error("Error fetching testimonials:", error);
+        return []; // Return an empty array in case of error
+    }
 }

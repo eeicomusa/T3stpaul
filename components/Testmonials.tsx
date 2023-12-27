@@ -1,14 +1,23 @@
 "use client";
-
+import {useState, useEffect}  from "react"
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css'
 import Image from 'next/image';
-import { testimonials } from "../components/constants/index";
+import { getTestimonials } from "../sanity/sanity-utils";
 
+const TestMonials = () => {
 
-const ImageCarousel = () => {
+  const [testimonials,setTestimonials] = useState([])
+   useEffect(() => {
+    const fetchTestimonials = async () => {
+      const data = await getTestimonials();
+      setTestimonials(data);
+      console.log("your testmonialsare loaded", data);
+    };
 
+    fetchTestimonials();
+  }, []);
   const settings = {
     dots: false,
     infinite: true,
@@ -37,7 +46,7 @@ const ImageCarousel = () => {
         <figure className="mt-10">
           <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
             <p>
-              “{testmonial.testimonial}”
+              “{testmonial.message}”
             </p>
           </blockquote>
           <figcaption className="mt-10">
@@ -49,7 +58,7 @@ const ImageCarousel = () => {
               height={100}
             />
             <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-              <div className="font-semibold text-gray-900">{testmonial.name}</div>
+              <div className="font-semibold text-gray-900">{testmonial.client}</div>
               <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-gray-900">
               </svg>
             </div>
@@ -64,4 +73,4 @@ const ImageCarousel = () => {
   );
 };
 
-export default ImageCarousel;
+export default TestMonials;

@@ -4,11 +4,11 @@ const links = [
         url:"/",
         name:'HOME',
     },
-    // {
-    //     id:2,
-    //     url:"/destinations",
-    //     name:'DESTINATIONS',
-    // },
+    {
+        id:2,
+        url:"/destinations",
+        name:'DESTINATIONS',
+    },
     {
         id:3,
         url:"/about",
