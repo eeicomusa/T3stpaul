@@ -126,7 +126,7 @@ const Navbar = () => {
                   onClick={handleSubMenuToggle}>
                   ABOUT US
                 </span>
-                {isSubMenuOpen && (
+                {/* {isSubMenuOpen && (
                   <ul className="flex flex-col gap-2 pl-4">
                     {links.find((link) => link.name === 'ABOUT US')?.submenu.map((subItem) => (
                       <li key={subItem.id}>
@@ -144,7 +144,7 @@ const Navbar = () => {
                       </li>
                     ))}
                   </ul>
-                )}
+                )} */}
               </motion.li>
 
               <motion.li
