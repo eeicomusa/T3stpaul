@@ -29,10 +29,10 @@ export default function Privacy(){
             <p><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</p>
             </li>
             <li>
-            <p><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where &quot;control&quot; means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</p>
+          
             </li>
             <li>
-            <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Paulo Safaris, 80100.</p>
+          
             </li>
             <li>
             <p><strong>Cookies</strong> are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.</p>
@@ -108,7 +108,7 @@ export default function Privacy(){
             for example, to count users who have visited those pages or opened an email and for other related website statistics 
             (for example, recording the popularity of a certain section and verifying system and server integrity).</li>
             </ul>
-            <p>Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser. Learn more about cookies on the <a href="https://www.freeprivacypolicy.com/blog/sample-privacy-policy-template/#Use_Of_Cookies_And_Tracking" target="_blank">Free Privacy Policy website</a> article.</p>
+            <p>Cookies can be Persistent or Session Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser. Learn more about cookies on the <a href="https://www.freeprivacypolicy.com/blog/sample-privacy-policy-template/#Use_Of_Cookies_And_Tracking" target="_blank">Free Privacy Policy website</a> article.</p>
             <p>We use both Session and Persistent Cookies for the purposes set out below:</p>
             <ul>
             <li>
