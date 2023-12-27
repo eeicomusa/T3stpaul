@@ -85,14 +85,28 @@ export default function Privacy(){
             </ul>
             <h4>Usage Data</h4>
             <p>Usage Data is collected automatically when using the Service.</p>
-            <p>Usage Data may include information such as Your Devices Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
-            <p>When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.</p>
-            <p>We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.</p>
+            <p>Usage Data may include information such as Your Devices Internet Protocol address (e.g. IP address), 
+              browser type, browser version, the pages of our Service that You visit, the time and date of Your visit,
+               the time spent on those pages, unique device identifiers and other diagnostic data.</p>
+            <p>When You access the Service by or through a mobile device, We may collect certain information automatically,
+               including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of
+                Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device
+                 identifiers and other diagnostic data.</p>
+            <p>We may also collect information that Your browser sends whenever You visit our Service or when You access the 
+              Service by or through a mobile device.</p>
             <h4>Tracking Technologies and Cookies</h4>
-            <p>We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service. The technologies We use may include:</p>
+            <p>We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information.
+               Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze
+                Our Service. The technologies We use may include:</p>
             <ul>
-            <li><strong>Cookies or Browser Cookies.</strong> A cookie is a small file placed on Your Device. You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, You may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will refuse Cookies, our Service may use Cookies.</li>
-            <li><strong>Web Beacons.</strong> Certain sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of a certain section and verifying system and server integrity).</li>
+            <li><strong>Cookies or Browser Cookies.</strong> A cookie is a small file placed on Your Device. You can instruct 
+            Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies,
+             You may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will refuse Cookies,
+              our Service may use Cookies.</li>
+            <li><strong>Web Beacons.</strong> Certain sections of our Service and our emails may contain small 
+            electronic files known as web beacons also referred to as clear gifs, pixel tags, and single-pixel gifs that permit the Company,
+            for example, to count users who have visited those pages or opened an email and for other related website statistics 
+            (for example, recording the popularity of a certain section and verifying system and server integrity).</li>
             </ul>
             <p>Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser. Learn more about cookies on the <a href="https://www.freeprivacypolicy.com/blog/sample-privacy-policy-template/#Use_Of_Cookies_And_Tracking" target="_blank">Free Privacy Policy website</a> article.</p>
             <p>We use both Session and Persistent Cookies for the purposes set out below:</p>
@@ -101,7 +115,8 @@ export default function Privacy(){
             <p><strong>Necessary / Essential Cookies</strong></p>
             <p>Type: Session Cookies</p>
             <p>Administered by: Us</p>
-            <p>Purpose: These Cookies are essential to provide You with services available through the Website and to enable You to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these Cookies, the services that You have asked for cannot be provided, and We only use these Cookies to provide You with those services.</p>
+            <p>Purpose: These Cookies are essential to provide You with services available through the Website and to enable 
+              You to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these Cookies, the services that You have asked for cannot be provided, and We only use these Cookies to provide You with those services.</p>
             </li>
             <li>
             <p><strong>Cookies Policy / Notice Acceptance Cookies</strong></p>
@@ -124,22 +139,28 @@ export default function Privacy(){
             <p><strong>To provide and maintain our Service</strong>, including to monitor the usage of our Service.</p>
             </li>
             <li>
-            <p><strong>To manage Your Account:</strong> to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.</p>
+            <p><strong>To manage Your Account:</strong> to manage Your registration as a user of the Service. The Personal Data
+             You provide can give You access to different functionalities of the Service that are available to You as a registered user.</p>
             </li>
             <li>
-            <p><strong>For the performance of a contract:</strong> the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service.</p>
+            <p><strong>For the performance of a contract:</strong> the development, compliance and undertaking of the purchase contract 
+            for the products, items or services You have purchased or of any other contract with Us through the Service.</p>
             </li>
             <li>
-            <p><strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.</p>
+            <p><strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication,
+            such as a mobile application push notifications regarding updates or informative communications related to the functionalities,
+             products or contracted services, including the security updates, when necessary or reasonable for their implementation.</p>
             </li>
             <li>
-            <p><strong>To provide You</strong> with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.</p>
+            <p><strong>To provide You</strong> with news, special offers and general information about other goods, services and events which
+             we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.</p>
             </li>
             <li>
             <p><strong>To manage Your requests:</strong> To attend and manage Your requests to Us.</p>
             </li>
             <li>
-            <p><strong>For business transfers:</strong> We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.</p>
+            <p><strong>For business transfers:</strong> We may use Your information to evaluate or conduct a merger, divestiture, restructuring, 
+            reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.</p>
             </li>
             <li>
             <p><strong>For other purposes</strong>: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience.</p>
@@ -195,15 +216,23 @@ export default function Privacy(){
             </li>
             </ul>
             <h2>Children Privacy</h2>
-            <p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.</p>
-            <p>If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.</p>
+            <p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable 
+              information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has
+               provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal
+                Data from anyone under the age of 13 without verification of parental consent, We take steps to remove
+                 that information from Our servers.</p>
+            <p>If We need to rely on consent as a legal basis for processing Your information and Your country requires 
+              consent from a parent, We may require Your parents consent before We collect and use that information.</p>
             <h2>Links to Other Websites</h2>
-            <p>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
+            <p>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link,
+               You will be directed to that third partys site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
             <p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
             <h2>Changes to this Privacy Policy</h2>
             <p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
-            <p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the &quot;Last updated&quot; date at the top of this Privacy Policy.</p>
-            <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+            <p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming 
+              effective and update the  12/12/2023 date at the top of this Privacy Policy.</p>
+            <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy 
+              are effective when they are posted on this page.</p>
             <h2>Contact Us</h2>
             <p>If you have any questions about this Privacy Policy, You can contact us:</p>
             <ul>
