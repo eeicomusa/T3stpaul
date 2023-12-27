@@ -2,7 +2,8 @@ import React from 'react'
 import Image from 'next/image';
 import { getTeam } from '@/sanity/sanity-utils';
 import { urlForImage } from '@/sanity/lib/image';
-import { gallery } from '@/components/constants';
+// import { gallery } from '@/components/constants';
+import Gallery from '@/components/Gallery';
 import { Metadata } from 'next';
 
 export const metadata:Metadata = {
@@ -119,9 +120,9 @@ export default async function About() {
         </div>
 
         {/*Gallery*/}
-        <h3 className="text-2xl">Gallery</h3>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {gallery?.map((item) => (
+        {/* <h3 className="text-2xl">Gallery</h3> */}
+        {/* <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"> */}
+          {/* {gallery?.map((item) => (
             <div
               key={item.id}
               className="w-full h-[150px] sm:h-[180px] relative rounded-md">
@@ -132,8 +133,9 @@ export default async function About() {
                 className="object-cover rounded-md"
               />
             </div>
-          ))}
-        </div>
+          ))} */}
+        {/* </div> */}
+          <Gallery/>
       </div>
     </section>
   );

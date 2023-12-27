@@ -12,10 +12,14 @@ import { GrClose, GrMenu } from "react-icons/gr";
 const Navbar = () => {
   const pathname = usePathname();
   const [toggle, setToggle] = useState(false);
-
+  const [isSubMenuOpen, setSubMenuOpen] = useState(false);
   const handleToggle = () => {
     setToggle((prev) => !prev);
   };
+  const handleSubMenuToggle = () => {
+    setSubMenuOpen(!isSubMenuOpen);
+  };
+
 
   return (
     <header className="fixed top-0 left-0 right-0 w-full bg-white shadow-md z-10">
@@ -114,20 +118,33 @@ const Navbar = () => {
                   BLOG
                 </Link>
               </motion.li>
-
-              <motion.li
+                <motion.li
                 whileInView={{ x: [-100, 0] }}
-                transition={{ duration: 0.7, ease: "easeOut" }}
-                onClick={handleToggle}>
-                <Link
-                  className={
-                    pathname == "/about"
-                      ? "text-white font-medium"
-                      : " hover:text-white"
-                  }
-                  href="/about">
+                transition={{ duration: 0.7, ease: "easeOut" }}>
+                <span
+                  className={pathname == "/about" ? "text-white font-medium" : "hover:text-white"}
+                  onClick={handleSubMenuToggle}>
                   ABOUT US
-                </Link>
+                </span>
+                {isSubMenuOpen && (
+                  <ul className="flex flex-col gap-2 pl-4">
+                    {links.find((link) => link.name === 'ABOUT US')?.submenu.map((subItem) => (
+                      <li key={subItem.id}>
+                        <Link href={subItem.url}>
+                          <a
+                            className={
+                              pathname == subItem.url
+                                ? "text-white font-medium"
+                                : "hover:text-white"
+                            }
+                          >
+                            {subItem.name}
+                          </a>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </motion.li>
 
               <motion.li

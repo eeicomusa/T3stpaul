@@ -13,6 +13,33 @@ const links = [
         id:3,
         url:"/about",
         name:'ABOUT US',
+        submenu:[
+          {
+            id: 9,
+            url: "/about/our-team",
+            name: "Our Team",
+          },
+          {
+            id : 10,
+            url : "/about/terms&conditions",
+            name: "Terms And Conditions",
+          },
+          {
+            id : 11,
+            url : "/about/privacy",
+            name: "Privacy Policy",
+          },
+          {
+            id : 12,
+            url : "/about/payment",
+            name: "Payment Terms",
+          },
+          {
+            id: 13,
+            url: "/about/travelguide",
+            name: "Travel Guide",
+          }
+        ]
     },
     
     {
