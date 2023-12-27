@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { getBlogs } from "../../../sanity/sanity-utils"
 import { urlForImage } from '@/sanity/lib/image';
 import { Metadata } from 'next';
-
+import Testmonials from "../../../components/Testmonials"
 export const metadata: Metadata = {
   title: "Blog",
   description: "We provide rich, informative and accurate content to our readers."
@@ -68,6 +68,7 @@ export default async function Blogs() {
         </article>
        
       </div>
+      <Testmonials />
     </section>
   );
 

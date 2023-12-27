@@ -660,8 +660,63 @@ const kenyaTouristDestinations = [
   }
 ];
 
+const testimonials = [
+  {
+    image: "/previewDestinations/serengeti.jpg",
+    name: "Emily Johnson",
+    testimonial: "Exploring the Maasai Mara with this travel agency was a dream come true. The wildebeest migration was a breathtaking sight. Definitely returning for more adventures!"
+  },
+  {
+    image: "/previewDestinations/serengeti.jpg",
+    name: "Michael Smith",
+    testimonial: "The trip to Amboseli National Park was phenomenal. Waking up to the view of Mount Kilimanjaro is something I'll never forget. Excellent service and planning!"
+  },
+  {
+    image: "/previewDestinations/serengeti.jpg",
+    name: "Carlos Hernández",
+    testimonial: "Nuestro viaje a la playa de Diani fue excepcional. Aguas cristalinas y arenas blancas, todo organizado perfectamente por la agencia."
+  },
+  {
+    image: "/previewDestinations/serengeti.jpg",
+    name: "Lucia Gomez",
+    testimonial: "La experiencia en el Parque Nacional de Serengeti fue increíble. Ver a los Cinco Grandes fue el punto culminante de nuestro viaje. ¡Gracias por una aventura inolvidable!"
+  },
+  {
+    image: "/previewDestinations/serengeti.jpg",
+    name: "Claire Dubois",
+    testimonial: "Le lac Nakuru avec ses flamants roses et sa faune sauvage était magnifique. Un service de première classe de l'agence de voyages."
+  },
+  {
+    image: "/previewDestinations/serengeti.jpg",
+    name: "Jean Lefevre",
+    testimonial: "Visiter le cratère du Ngorongoro en Tanzanie a été une expérience à couper le souffle. Des paysages époustouflants et une faune incroyable. Merci pour ce voyage mémorable."
+  },
+  {
+    image: "/previewDestinations/serengeti.jpg",
+    name: "Aisha Mwangi",
+    testimonial: "Safari yetu katika Hifadhi ya Taifa ya Tsavo ilikuwa ya kipekee. Tuliona tembo wengi na mandhari za kupendeza. Huduma ilikuwa bora!"
+  },
+  {
+     image: "/previewDestinations/serengeti.jpg",
+    name: "John Okello",
+    testimonial: "Kutembelea Mombasa na kupumzika kwenye fukwe zake za kuvutia ilikuwa ni mapumziko yaliyohitajika. Asante kwa kupanga safari yetu."
+  },
+  {
+   image: "/previewDestinations/serengeti.jpg",
+    name: "Sofia Martinez",
+    testimonial: "The visit to Mount Kilimanjaro National Park was an adventure of a lifetime. The hiking experience and the views were extraordinary. Highly recommended agency!"
+  },
+  {
+    image: "/previewDestinations/serengeti.jpg",
+    name: "Nadia Bensalah",
+    testimonial: "Un safari dans la réserve nationale du Masai Mara était extraordinaire. Voir les lions de près était un moment magique. Service exceptionnel de l'agence."
+  }
+];
+
+
 
 export {
+  testimonials,
   safaris,
   links,
   prev_destination,

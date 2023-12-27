@@ -3,10 +3,7 @@ import React from 'react';
 import { HiStar } from "react-icons/hi";
 import Image from "next/image";
 
-export default function Testimonials() {
-  // Mock testimonials data
-  const testimonials = []; // placeholder for your testimonials data
-
+export default function Trending() {
   return (
     <div className="relative w-full h-[400px] overflow-hidden bg-blue-500">
       {/* Background image */}
@@ -15,12 +12,7 @@ export default function Testimonials() {
         alt="Background"  
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
-
-      {/* Overlapping Eclipses with Images */}
       <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-        {/* ... Eclipse Images ... */}
-
-        {/* Content with darker background */}
         <div className="relative  p-8 text-center bg-black bg-opacity-50">
           <div className="inline-block mb-3">
             <span className="text-sm font-bold text-yellow-400 uppercase px-3 py-1 bg-white rounded-full mr-2">Trending Now</span>
