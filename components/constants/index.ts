@@ -175,10 +175,10 @@ const mombasasafaris = [
   {
     id: 2,
     url: "/mombasa-tours/half-day-city-tour",
-    imgUrl: "/mombasa-tours/city-tour/wood.jpg",
-    title: "Mombasa City Half Day Tour",
+    imgUrl: "/mombasa-tours/city-tour/crocodile.jpg",
+    title: "Mamba Village City Half Day Tour",
     location:
-      "Mombasa Old Town, Wood Carvings Center(Akamba), Crocodile Farm(Nyali)",
+      "Mamba Vllage Crocodile Farm(Nyali)",
     alt: "mombasa",
   },
 ];
