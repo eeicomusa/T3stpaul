@@ -575,25 +575,6 @@ const nairobi = [
   },
 ];
 
-export {
-  safaris,
-  links,
-  prev_destination,
-  gallery,
-  footerlinks,
-  amboseli,
-  nakuru,
-  maasai,
-  tsavowest,
-  tsavoeast,
-  serengeti,
-  nairobi,
-  payments,
-  bannerfooterlinks,
-  mombasasafaris,
-  flightsafaris,
-  slides
-};
 
 const slides = [
   {
@@ -639,3 +620,70 @@ const slides = [
     description: "After a day of adventure, relax in the finest hotels offering exceptional service and comfort. Our selected accommodations provide the perfect setting to unwind, with stunning views and world-class amenities."
   }
 ];
+
+const kenyaTouristDestinations = [
+  {
+    image: "/images/maasai-mara.jpg",
+    destination: "Maasai Mara National Reserve",
+    city: "Narok",
+    description: "Famed for its exceptional population of lions, leopards, cheetahs, and its annual migration of zebra, Thomson's gazelle, and wildebeest to and from the Serengeti every year from July to October, known as the Great Migration."
+  },
+  {
+    image: "/images/amboseli-national-park.jpg",
+    destination: "Amboseli National Park",
+    city: "Kajiado",
+    description: "Known for its large elephant herds and views of immense Mount Kilimanjaro, across the border in Tanzania."
+  },
+  {
+    image: "/images/lake-nakuru.jpg",
+    destination: "Lake Nakuru National Park",
+    city: "Nakuru",
+    description: "Famous for its huge flocks of pink flamingos. The bird life here is world-renowned and offers over 400 species of both aquatic and terrestrial birds."
+  },
+  {
+    image: "/images/tsavo-east.jpg",
+    destination: "Tsavo East National Park",
+    city: "Voi",
+    description: "One of the oldest and largest parks in Kenya. Known for its vast area, diversity of wildlife, and the Yatta Plateau, the world's longest lava flow."
+  },
+  {
+    image: "/images/mount-kenya.jpg",
+    destination: "Mount Kenya National Park",
+    city: "Nanyuki",
+    description: "Home to the second-highest peak in Africa, Mount Kenya. It is an important water tower in the country and offers a unique ecosystem with varied flora and fauna."
+  },
+  {
+    image: "/images/lamu.jpg",
+    destination: "Lamu Old Town",
+    city: "Lamu",
+    description: "A UNESCO World Heritage Site, Lamu Old Town is Kenya's oldest continually inhabited settlement with origins dating back to the 12th century."
+  },
+  {
+    image: "/images/diani-beach.jpg",
+    destination: "Diani Beach",
+    city: "Kwale",
+    description: "A pristine and scenic beach stretch on the Indian Ocean coast, popular for its soft white sands and turquoise waters."
+  }
+];
+
+
+export {
+  safaris,
+  links,
+  prev_destination,
+  gallery,
+  footerlinks,
+  amboseli,
+  nakuru,
+  maasai,
+  tsavowest,
+  tsavoeast,
+  serengeti,
+  nairobi,
+  payments,
+  bannerfooterlinks,
+  mombasasafaris,
+  flightsafaris,
+  slides,
+  kenyaTouristDestinations
+};
