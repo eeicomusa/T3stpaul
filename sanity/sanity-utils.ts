@@ -12,12 +12,17 @@ export async function getDestinations() : Promise<DestinationTypes[]>  {
         _id,
         name,
         "slug": slug.current,
-        "image": image.asset->url
+        "image": image.asset->url,
+        price,
+        // description,
+        // includes,
+        // content
     }`;
 
     try {
         const data = await client.fetch(query);
         return data;
+        console.log("Success",data);
     } catch (error) {
         console.error("Error fetching destinations:", error);
         return []; // Return an empty array in case of error
