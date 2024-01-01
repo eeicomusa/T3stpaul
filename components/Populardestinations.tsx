@@ -28,17 +28,17 @@ const PopularDestinations = () => {
                     </figure>
                     <div className="card-content">
                         <div className="card-rating">
-                                 <HiStar size={14} />
-                    <HiStar size={14} />
-                    <HiStar size={14} />
-                    <HiStar size={14} />
-                    <HiStar size={14} />
+                            <HiStar size={14} />
+                            <HiStar size={14} />
+                            <HiStar size={14} />
+                            <HiStar size={14} />
+                            <HiStar size={14} />
                         </div>
                         <p className="card-subtitle">
                         <a href="#">{destination.city}</a>
                         </p>
                         <h3 className="h3 card-title">
-                        <a href="#">{destination.city}</a>
+                        {/* <a href="#">{destination.city}</a> */}
                         </h3>
                         <p className="card-text">
                       {destination.description}
