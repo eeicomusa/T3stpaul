@@ -1,6 +1,6 @@
 export default function Search () {
     return (
-         <section className="tour-search">
+         <section className="tour-search bg-gradient-to-r from-[#29AB87] to-[#ffc15c]">
             <div className="container">
                 <form action="" className="tour-search-form">
                 <div className="input-wrapper">

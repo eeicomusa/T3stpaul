@@ -44,7 +44,7 @@ const ImageCarousel = () => {
                   {slide.description || "Default description..."}
                 </p>
                 <div className="btn-group">
-                  <button className="btn btn-primary">Learn more</button>
+                  {/* <button className="btn btn-primary">Learn more</button> */}
                   <button className="btn btn-secondary">Book now</button>
                 </div>
               </div>

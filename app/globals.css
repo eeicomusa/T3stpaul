@@ -189,12 +189,12 @@ body { background: var(--white); }
 }
 
 .btn-primary {
-  background: var(--bright-navy-blue);
+  background: #29ab87;
   border-color: var(--bright-navy-blue);
 }
 
 .btn-primary:is(:hover, :focus) {
-  background: var(--yale-blue);
+  background: #ffc15c;
   border-color: var(--yale-blue);
 }
 
@@ -458,7 +458,7 @@ body { background: var(--white); }
 \*-----------------------------------*/
 
 .tour-search {
-  background: var(--bright-navy-blue);
+  /* background: #29ab87; */
   padding-block: var(--section-padding);
 }
 
@@ -636,7 +636,7 @@ body { background: var(--white); }
 }
 
 .package-card .card-price {
-  background: var(--united-nations-blue);
+ background:  #29AB87;
   color: var(--white);
   padding: 25px 20px;
   text-align: center;
@@ -970,6 +970,7 @@ address {
    */
 
   .tour-search-form {
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: flex-end;
