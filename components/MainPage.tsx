@@ -2,30 +2,19 @@ import Image from "next/image";
 
 export default function MainPage () {
     return (
-        <div>
-        <article>
-            <section className="cta" id="contact">
-            <div className="container">
-                <div className="cta-content">
-                <p className="section-subtitle">Call To Action</p>
-                <h2 className="h2 section-title">
-                    Ready For Unforgatable Travel. Remember Us!
-                </h2>
-                <p className="section-text">
-                    Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec
-                    nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia
-                    tenetur, aptent.
-                </p>
-                </div>
-                <button className="btn btn-secondary">Contact Us !</button>
-            </div>
-            </section>
-        </article>
         
-        <div className="footer">
-</div>
-
-    </div>
-
+            <section className="cta" id="contact">
+                <div className="container">
+                    <div className="cta-content">
+                    <h2 className="h2 section-title">
+                        Ready For Unforgatable Travel
+                    </h2>
+                    <p className="section-text">
+                       Create unforgatable memories with us , Book a journey with us today to experience the unforgatable
+                    </p>
+                    </div>
+                    <button className="btn btn-secondary">Contact Us !</button>
+                </div>
+            </section>
     )
 }

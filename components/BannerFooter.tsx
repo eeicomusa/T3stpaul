@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 const BannerFooter = () => {
   const pathname = usePathname();
   return (
-    <section className="w-full bg-yellow border-t border-white/30">
+    <section className="w-full border-t border-white/30  bg-gradient-to-r from-[#29AB87] to-[#ffc15c]">
       <div className="max-w-7xl m-auto px-4 sm:px-6 lg:px-8 flex flex-wrap flex-row gap-4  md:gap-6 lg:gap-8 items-center justify-center sm:justify-between py-2 text-white  text-sm">
         <p className="text-white/80">
           &#169;2023 paulosafaris - All rights reserved
@@ -18,10 +18,10 @@ const BannerFooter = () => {
           <p>Built with</p>
           <BsHeartFill className="h-3 w-3 text-red mx-2" />
           <Link
-            href="https://johnsonmuchiri.vercel.app"
+            href="https://moracha.xyz"
             rel="noopener noreferrer"
             className="hover:text-white underline hover:no-underline ml-1">
-            Muchiri Wamuyu
+            Moracha Jacob
           </Link>
         </div>
       </div>

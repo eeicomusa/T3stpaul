@@ -11,14 +11,14 @@ body, html{
 }
 
 .bg-yellow{
-  background-color:hsl(214, 72%, 33%);
+  background-color: #ffc15c;
 }
 .text-yellow{
   color:hsl(214, 72%, 33%);
 }
 
 .bg-green{
-  background-color:#29ab87;
+  background-color:#c8e027;
 }
 .text-green{
   color:#29ab87;
@@ -69,7 +69,7 @@ body, html{
   --bright-navy-blue: hsl(214, 57%, 51%);
   --spanish-gray: hsl(0, 0%, 60%);
   --black-coral: hsl(225, 8%, 42%);
-  --oxford-blue: hsl(208, 97%, 12%);
+  --oxford-blue: hsl(79, 97%, 12%);
   --yale-blue: hsl(214, 72%, 33%);
   --blue-ncs: hsl(197, 100%, 36%);
   --gunmetal: hsl(206, 34%, 20%);
@@ -200,7 +200,7 @@ body { background: var(--white); }
 
 .btn-secondary { border-color: var(--white); }
 
-.btn-secondary:is(:hover, :focus) { background: hsla(0, 0%, 100%, 0.1); }
+.btn-secondary:is(:hover, :focus) { background: #ffc15c; }
 
 .h1,
 .h2,
@@ -226,7 +226,7 @@ body { background: var(--white); }
 }
 
 .section-subtitle {
-  color: var(--bright-navy-blue);
+  color: #111;
   font-size: var(--fs-5);
   text-transform: uppercase;
   font-family: var(--ff-montserrat);
@@ -717,7 +717,7 @@ body { background: var(--white); }
 \*-----------------------------------*/
 
 .cta {
-  background: var(--bright-navy-blue);
+  background: #29ab87;
   padding-block: var(--section-padding);
 }
 

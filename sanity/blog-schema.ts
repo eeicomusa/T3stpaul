@@ -50,7 +50,7 @@ const blog = {
         },
         {
             name:'content',
-            title:'Content',
+            title:'Short Description',
             type:"string"
             // type:'array',
             // of:[{type:'block'}]

@@ -19,7 +19,7 @@ import { usePathname } from "next/navigation";
 const Footer = () => {
   const pathname = usePathname();
   return (
-    <footer className="w-full bg-yellow text-white">
+    <footer className="w-full  text-black  bg-gradient-to-r from-[#29AB87] to-[#ffc15c]">
       <div className="max-w-7xl m-auto px-4 sm:px-6 lg:px-8 py-6 pt-10 flex flex-col gap-6 sm:flex-row justify-between">
         <div className="flex flex-col gap-4 sm:w-1/3 items-center sm:items-start">
           <div className="flex flex-row gap-2">

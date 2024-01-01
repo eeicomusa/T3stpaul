@@ -4,6 +4,8 @@ import { getDestinations } from "../../../sanity/sanity-utils";
 import { urlForImage } from '@/sanity/lib/image';
 import { HiLocationMarker, HiStar } from "react-icons/hi";
 
+
+
 export default async function Destinations() {
   const destinations = await getDestinations();
   console.log("your destinations",destinations);
@@ -49,6 +51,7 @@ export default async function Destinations() {
                      ${dest.price}
                    </p>
                  </div>
+                
                </div>
             </Link>
           ))}
