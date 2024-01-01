@@ -12,7 +12,7 @@ const PreviewDestinations = () => {
         <div className="flex gap-1 flex-row justify-between">
           <h2 className="text-4xl">Top destinations.</h2>
           <Link
-            className="border text-sm border-[#e3170a] py-2 px-4 outline-none hover:bg-transparent rounded-sm gap-2 hover:text-[#e3170a] hidden sm:flex flex-row items-center justify-center bg-[#e3170a] active:scale-95 text-white/90 duration-150 transition-all ease-out font-medium"
+            className="border text-sm border-[#ffc15c] py-2 px-4 outline-none  rounded-md gap-4  hidden sm:flex flex-row items-center justify-center bg-[#ffc15c] active:scale-95 text-white duration-150 transition-all ease-out font-medium"
             href="/destinations">
             <p>View More</p>
             <HiArrowCircleRight size={18} />

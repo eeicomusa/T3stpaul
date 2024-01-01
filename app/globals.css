@@ -532,7 +532,7 @@ body { background: var(--white); }
 
 
 .popular-card .card-rating {
-  background: var(--bright-navy-blue);
+  background: #29AB87;
   color: var(--white);
   position: absolute;
   top: 0;

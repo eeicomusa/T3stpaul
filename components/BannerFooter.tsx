@@ -15,8 +15,8 @@ const BannerFooter = () => {
           &#169;2023 paulosafaris - All rights reserved
         </p>
         <div className="flex flex-row items-center text-sm text-white/80">
-          <p>Built with</p>
-          <BsHeartFill className="h-3 w-3 text-red mx-2" />
+          <p>Developer & Mantained by</p>
+          {/* <BsHeartFill className="h-3 w-3 text-red mx-2" /> */}
           <Link
             href="https://moracha.xyz"
             rel="noopener noreferrer"
