@@ -4,33 +4,11 @@ import { getDestination } from '@/sanity/sanity-utils';
 import { urlForImage } from '@/sanity/lib/image';
 import { HiArrowCircleRight } from "react-icons/hi";
 import Link from "next/link";
-import BlockContent   from '@sanity/block-content-to-react'
+// import BlockContent   from '@sanity/block-content-to-react'
 
-const Serializer = {
-  types: {
-    block: props => {
-      switch (props.node.style) {
-        case 'h1':
-          return <h1>{props.children}</h1>;
-        case 'h2':
-          return <h2>{props.children}</h2>;
-        case 'h3':
-          return <h3>{props.children}</h3>;
-        // ... handle other styles like 'blockquote', etc.
-        default:
-          return <p>{props.children}</p>;
-      }
-    },
-    // Add other types if you have, like 'image', 'code', etc.
-  },
-  marks: {
-    // Handle marks like bold, italic, etc.
-    strong: ({ children }) => <strong>{children}</strong>,
-    em: ({ children }) => <em>{children}</em>,
-    // ... add other marks like 'underline', 'code', etc.
-  },
-  // ... potentially other serializers for embedded objects, links, etc.
-};
+import {PortableText} from '@portabletext/react'
+
+import { components } from '../../../../components/Serializer';
 
 
 
@@ -56,16 +34,16 @@ export default async function Destination({
         </div>
         <p>
           {destination.description && (
-          <p className="text-lg leading-relaxed">{destination.description}</p>
+          <p className="text-lg leading-relaxed bold">{destination.description}</p>
         )}
         </p>
         <div>
         {destination.includes && (
-          <BlockContent 
-            blocks={destination.includes}
-            serializers={Serializer}
-            projectId="ga8lllhf"
-            dataset="production"
+          <PortableText
+            value={destination.includes}
+            components={components}
+            // projectId="ga8lllhf"
+            // dataset="production"
           />
         )}
    

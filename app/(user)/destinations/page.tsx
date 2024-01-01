@@ -3,7 +3,9 @@ import Image from 'next/image';
 import { getDestinations } from "../../../sanity/sanity-utils";
 import { urlForImage } from '@/sanity/lib/image';
 import { HiLocationMarker, HiStar } from "react-icons/hi";
+import {PortableText} from '@portabletext/react'
 
+import { components } from '../../../components/Serializer';
 
 
 export default async function Destinations() {
@@ -38,8 +40,10 @@ export default async function Destinations() {
               </div>
              {/* Description */}
                <div className="flex flex-col gap-2 px-4 pb-6">
-                 <h3 className=" text-xl text-green">Destination :{dest.name}</h3>
-                <p>{dest.description}</p>
+                 {/* <h3 className=" text-xl text-green">{dest.name}</h3> */}
+              <p>
+                  
+                </p>
                  {/* Location and price */}
                  <div className="flex items-around justify-between text-md bold">
                    <p className="text-black/70 font-talic">
@@ -48,11 +52,14 @@ export default async function Destinations() {
                      </span>
                      City : {dest.name}
                    </p>
+                 </div>
+                <div className="flex items-around justify-between text-md bold">
+
                    <p className="text-black/70 font-bold">
                     Price ${dest.price}
                    </p>
-                 </div>
-                
+                  <button className="bg-green text-white px-4 py-2 rounded-md">Learn More</button>
+                </div>
                </div>
             </Link>
           ))}
