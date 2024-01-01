@@ -14,15 +14,15 @@ export async function getDestinations() : Promise<DestinationTypes[]>  {
         "slug": slug.current,
         "image": image.asset->url,
         price,
-        // description,
-        // includes,
-        // content
+        description,
+        includes,
+        content
     }`;
 
     try {
         const data = await client.fetch(query);
         return data;
-        console.log("Success",data);
+        // console.log("Success",data);
     } catch (error) {
         console.error("Error fetching destinations:", error);
         return []; // Return an empty array in case of error
@@ -37,7 +37,10 @@ export async function getDestination(slug: string): Promise<DestinationTypes> {
         "image": image.asset->url,
         "slug": slug.current,
         name,
-        content
+        content,
+        decription,
+        includes,
+        price
     }`;
    // try {
       const data = await client.fetch(querry, { next: { revalidate: 3600 } });

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { HiLocationMarker, HiStar } from "react-icons/hi";
+import {  HiStar } from "react-icons/hi";
 
 import { flightsafaris } from "./constants";
 
@@ -10,11 +10,11 @@ export default function FlightSafaris() {
       <div className="container">
         <p className="section-subtitle">Popular Packages</p>
         <h2 className="h2 section-title">Checkout Our Packages</h2>
-        <p className="section-text">
-          Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo,
+        {/* <p className="section-text"> */}
+          {/* Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo,
           rutrum. Vestibulum cumque laudantium. Sit ornare mollitia tenetur,
-          aptent.
-        </p>
+          aptent. */}
+        {/* </p> */}
         <ul className="package-list">
           {flightsafaris.map((item) => (
             <li key={item.id}>

@@ -13,10 +13,13 @@ type SanityBlock = {
 
 
 export type DestinationTypes = {
-    name: string;
-    _id: string;
-    _createdAt: Date;
-    image: Image;
-    slug:string;
-    content: string;
-}
+  name: string;
+  _id: string;
+  _createdAt: Date;
+  image: Image;
+  price: number;
+  description: string;
+  includes: string;
+  slug: string;
+  content: string;
+};
