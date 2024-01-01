@@ -55,12 +55,12 @@ export default async function Destination({
           />
         </div>
         <p>
-          {destination.content && (
-          <p className="text-lg leading-relaxed">{destination.content}</p>
+          {destination.description && (
+          <p className="text-lg leading-relaxed">{destination.description}</p>
         )}
         </p>
         <div>
-                  {destination.includes && (
+        {destination.includes && (
           <BlockContent 
             blocks={destination.includes}
             serializers={Serializer}

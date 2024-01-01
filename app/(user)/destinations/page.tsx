@@ -39,7 +39,7 @@ export default async function Destinations() {
              {/* Description */}
                <div className="flex flex-col gap-2 px-4 pb-6">
                  <h3 className=" text-xl text-green">Destination :{dest.name}</h3>
-
+                <p>{dest.description}</p>
                  {/* Location and price */}
                  <div className="flex items-around justify-between text-md bold">
                    <p className="text-black/70 font-talic">

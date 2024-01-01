@@ -18,8 +18,7 @@ export type DestinationTypes = {
   _createdAt: Date;
   image: Image;
   price: number;
-  description: SanityBlock[];
+  description: string;
   includes: SanityBlock[];
   slug: string;
-  content: string;
 };

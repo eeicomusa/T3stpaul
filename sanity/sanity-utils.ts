@@ -33,14 +33,14 @@ export async function getDestinations() : Promise<DestinationTypes[]>  {
 //Fetch a single destination using a slug param
 export async function getDestination(slug: string): Promise<DestinationTypes> {
   const querry = groq`*[_type == "destination" && slug.current == "${slug}"][0]{
-        _id,
-        "image": image.asset->url,
-        "slug": slug.current,
+         _id,
         name,
-        content,
-        decription,
+        "slug": slug.current,
+        "image": image.asset->url,
+        price,
+        description,
         includes,
-        price
+        content
     }`;
    // try {
       const data = await client.fetch(querry, { next: { revalidate: 3600 } });

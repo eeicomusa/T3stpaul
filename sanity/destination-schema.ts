@@ -29,24 +29,18 @@ const destination = {
             ]
         },
         {
-            name:'content',
-            title: 'Content',
+            name:'description',
+            title: 'Short Description',
             type: 'string'
         },
         {
             name :'price',
-            title: 'Price',
+            title: 'Price  Per Day/Trip/Night',
             type: 'number'
         },
         {
-            name:'description',
-            title: 'description',
-            type: 'array',
-           of: [{type : 'block'}]
-        },
-        {
             name:'includes',
-            title : 'includes',
+            title :'Describe what is icluded (e.g Accommodation,transportation etc)',
             type: 'array',
             of:[{type : 'block'}]
         }
