@@ -1,10 +1,14 @@
+// Define an interface for the block component props
+interface BlockProps {
+  style: string;
+  children: React.ReactNode;
+}
+
 export const components = {
   types: {
-    block: (props) => {
-      // Destructure the style from props and rename it to blockStyle
+    block: (props: BlockProps) => {
       const { style: blockStyle, children } = props;
 
-      // Use a switch statement or similar logic to render different block styles
       switch (blockStyle) {
         case 'h1':
           return <h1>{children}</h1>;
@@ -15,12 +19,12 @@ export const components = {
           return <p>{children}</p>;
       }
     },
-    // Define components for other types if needed
+    // Other components...
   },
   marks: {
-    strong: (props) => <strong>{props.children}</strong>,
-    em: (props) => <em>{props.children}</em>,
-    // Add other mark types if needed
+    strong: (props: { children: React.ReactNode }) => <strong>{props.children}</strong>,
+    em: (props: { children: React.ReactNode }) => <em>{props.children}</em>,
+    // Other mark components...
   },
-  // Define components for list, listItem, etc. if needed
+  // Other components if needed...
 };

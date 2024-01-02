@@ -16,7 +16,7 @@ const Banner = () =>{
             </p>
             <p className="flex items-center justify-center gap-1">
               <HiMail size={12} />
-              paul_otti@yahoo.com
+              info@paulosafaris.co.ke
             </p>
           </div>
 

@@ -190,7 +190,7 @@ const Enquire = () => {
               </div>
               <div className="text-gray-500 flex items-center gap-2">
                 <HiMail size={18} />
-                <p>paul_otti@yahoo.com</p>
+                <p>info@paulosafaris.co.ke</p>
               </div>
             </div>
 
