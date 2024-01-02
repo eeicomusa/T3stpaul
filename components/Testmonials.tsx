@@ -19,7 +19,7 @@ const TestMonials = () => {
     const fetchTestimonials = async () => {
       const data = await getTestimonials();
       setTestimonials(data);
-      console.log("your testmonialsare loaded", data);
+//console.log("your testmonialsare loaded", data);
     };
 
     fetchTestimonials();

@@ -18,7 +18,7 @@ export default async function Destination({
   params: { slug: string };
 }) {
   const destination = await getDestination(params.slug);
-   console.log("Fetched destination:", destination);
+  //  console.log("Fetched destination:", destination);
 
   return (
     <section className="w-full min-h-screen">

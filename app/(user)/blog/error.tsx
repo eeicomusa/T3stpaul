@@ -6,7 +6,7 @@ export default function Error({reset, error}:{error:Error;reset:()=>void}){
 
     useEffect(()=>{
         //Log error to an error reporting service
-        console.log(error)
+        // console.log(error)
     },[error])
     return(
         <div className="min-h-screen flex items-center justify-center my-2 flex-col">
