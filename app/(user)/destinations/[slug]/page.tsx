@@ -32,15 +32,17 @@ export default async function Destination({
             className="rounded-md object-cover"
           />
         </div>
-        <p>
+        <div>
           {destination.description && (
           <p className="text-lg leading-relaxed bold">{destination.description}</p>
         )}
-        </p>
+        </div>
         <div>
         {destination.includes && (
           <PortableText
             value={destination.includes}
+            // @ts-ignore
+
             components={components}
             // projectId="ga8lllhf"
             // dataset="production"
