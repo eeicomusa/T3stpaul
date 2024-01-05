@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-row items-center justify-center text-sm gap-2 text-white/80">
             <HiMail size={18} />
-            <p>info@paulosafaris.co.ke</p>
+            <a href="mailto:info@paulosafaris.co.ke">info@paulosafaris.co.ke</a>
           </div>
 
           {/* Social icons */}

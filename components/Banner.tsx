@@ -12,11 +12,14 @@ const Banner = () =>{
           <div className="flex items-center justify-start gap-4 w-full text-sm">
             <p className="flex items-center justify-center gap-1 ">
               <HiPhone size={12} />
+              
               +254710558659 <span>|</span> +254720484862
             </p>
             <p className="flex items-center justify-center gap-1">
               <HiMail size={12} />
-              info@paulosafaris.co.ke
+              <a href="mailto:info@paulosafaris.co.ke">
+                info@paulosafaris.co.ke
+              </a>
             </p>
           </div>
 
