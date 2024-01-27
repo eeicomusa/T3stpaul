@@ -30,7 +30,7 @@ const ImageCarousel = () => {
     <section id="home" className="w-full overflow-hidden pt-[4rem] sm:pt-[4.5rem] h-full">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="w-full h-[300px] md:h-[400px] lg:h-[450px] sm:h-[350px] relative">
+          <div key={index} className="w-full h-[300px] md:h-[600px] lg:h-[700] sm:h-[450px] relative">
             <Image
               className="object-cover"
               src={slide.src}
@@ -39,13 +39,13 @@ const ImageCarousel = () => {
             />
             <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-center bg-opacity-50 bg-black text-white">
               <div>
-                <h2 className="h1 hero-title">{slide.title || "Journey to explore world"}</h2>
+                {/* <h2 className="h1 hero-title">{slide.title || "Journey to explore world"}</h2> */}
                 <p className="hero-text">
-                  {slide.description || "Default description..."}
+                  {/* {slide.description || "Default description..."} */}
                 </p>
                 <div className="btn-group">
                   {/* <button className="btn btn-primary">Learn more</button> */}
-                  <button className="btn btn-secondary">Book now</button>
+                  {/* <button className="btn btn-secondary">Book now</button> */}
                 </div>
               </div>
             </div>
