@@ -30,13 +30,13 @@ export default async function Destinations() {
                    className="rounded-t-md object-cover hover:grayscale transition-all filter duration-300 ease-out"
               />
              {/* Stars */}
-                 <div className="p-1 absolute top-1 left-1 bg-white rounded-sm flex flex-row font-bold text-yellow">
+                {/* <div className="p-1 absolute top-1 left-1 bg-white rounded-sm flex flex-row font-bold text-yellow">
                    <HiStar size={14} />
                    <HiStar size={14} />
                    <HiStar size={14} />
                    <HiStar size={14} />
                    <HiStar size={14} />
-                 </div>
+                 </div>  */}
               </div>
              {/* Description */}
                <div className="flex flex-col gap-2 px-4 pb-6">
