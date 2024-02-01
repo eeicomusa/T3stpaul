@@ -2,17 +2,17 @@ const links = [
     {
         id:1,
         url:"/",
-        name:'HOME',
+        name:'Home',
     },
     {
         id:2,
         url:"/destinations",
-        name:'DESTINATIONS',
+        name:'Destinations',
     },
     {
         id:3,
         url:"/about",
-        name:'ABOUT US',
+        name:'About Us',
         submenu:[
           {
             id: 9,
@@ -45,13 +45,13 @@ const links = [
     {
         id:4,
         url:"/blog",
-        name:'BLOG',
+        name:'Blog',
     },
 
     {
         id:5,
         url:"/reservation",
-        name:'CONTACT US',
+        name:'Contact Us',
     },
 
 ];

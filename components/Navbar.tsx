@@ -85,7 +85,7 @@ const Navbar = () => {
                       ? "text-white font-medium"
                       : "hover:text-white"
                   }>
-                  HOME
+                  Home
                 </Link>
               </motion.li>
 
@@ -95,16 +95,16 @@ const Navbar = () => {
                 onClick={handleToggle}>
                 <Link
                   className={
-                    pathname == "/destinations"
+                    pathname == "/safaris"
                       ? "text-white font-medium"
                       : " hover:text-white"
                   }
-                  href="/destinations">
-                  DESTINATIONS
+                  href="/safaris">
+                  Safaris 
                 </Link>
               </motion.li>
 
-              <motion.li
+              {/* <motion.li
                 whileInView={{ x: [-100, 0] }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 onClick={handleToggle}>
@@ -117,14 +117,14 @@ const Navbar = () => {
                   href="/blog">
                   BLOG
                 </Link>
-              </motion.li>
+              </motion.li> */}
                 <motion.li
                 whileInView={{ x: [-100, 0] }}
                 transition={{ duration: 0.7, ease: "easeOut" }}>
                 <span
                   className={pathname == "/about" ? "text-white font-medium" : "hover:text-white"}
                   onClick={handleSubMenuToggle}>
-                  ABOUT US
+                  About Us
                 </span>
                 {/* {isSubMenuOpen && (
                   <ul className="flex flex-col gap-2 pl-4">
@@ -158,7 +158,7 @@ const Navbar = () => {
                       : " hover:text-white"
                   }
                   href="/reservation">
-                  CONTACT US
+                  Contact Us
                 </Link>
               </motion.li>
             </ul>
