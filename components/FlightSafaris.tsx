@@ -62,10 +62,10 @@ export default function FlightSafaris() {
                       <HiStar size={14}/>
                     </div>
                   </div>
-                  <p className="price">
+                  {/* <p className="price">
                     ${item.price}
                     <span>/ per person</span>
-                  </p>
+                  </p> */}
                   <button className="btn btn-secondary">Book Now</button>
                 </div>
               </div>
