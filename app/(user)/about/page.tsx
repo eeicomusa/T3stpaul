@@ -128,7 +128,7 @@ export default async function About() {
         </div>
       </div>
 
-        {/* <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"> 
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"> 
           {gallery?.map((item) => (
             <div
               key={item.id}
@@ -141,8 +141,8 @@ export default async function About() {
               />
             </div>
           ))}
-         </div> */}
-          <Gallery/>
+         </div>
+          
       </div>
     </section>
   );

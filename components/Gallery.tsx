@@ -35,7 +35,43 @@ export default function Gallery () {
                 </li>
                 <li className="gallery-item">
                     <figure className="gallery-image">
-                    <Image src="/travellers/elephants.jpg" alt="Gallery image" width={500} height={200} />
+                    <Image src="/travellers/elephant.jpg" alt="Gallery image" width={500} height={200} />
+                    </figure>
+                </li>
+                </ul>
+            </div>
+             <div className="container mt-2">
+                <ul className="gallery-list">
+                <li className="gallery-item">
+                    <figure className="gallery-image">
+                    <Image
+                    src="/travellers/crocodile.jpg" 
+                    alt="Gallery image" 
+                    width={500} height={200}
+                    />
+                    </figure>
+                </li>
+                <li className="gallery-item">
+                    <figure className="gallery-image">
+                    <Image 
+                    src="/travellers/lion.jpg"
+                    alt="Gallery image"  width={500} height={200}
+                    />
+                    </figure>
+                </li>
+                <li className="gallery-item">
+                    <figure className="gallery-image">
+                    <Image src="/travellers/elephants.jpg" alt="Gallery image" width={500}  height={200} />
+                    </figure>
+                </li>
+                <li className="gallery-item">
+                    <figure className="gallery-image">
+                    <Image src="/travellers/ocean.jpg" alt="Gallery image" width={500} height={200} />
+                    </figure>
+                </li>
+                <li className="gallery-item">
+                    <figure className="gallery-image">
+                    <Image src="/travellers/skies.jpg" alt="Gallery image" width={500} height={200} />
                     </figure>
                 </li>
                 </ul>

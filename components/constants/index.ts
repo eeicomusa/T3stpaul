@@ -42,11 +42,11 @@ const links = [
         ]
     },
     
-    {
-        id:4,
-        url:"/blog",
-        name:'Blog',
-    },
+    // {
+    //     id:4,
+    //     url:"/blog",
+    //     name:'Blog',
+    // },
 
     {
         id:5,
