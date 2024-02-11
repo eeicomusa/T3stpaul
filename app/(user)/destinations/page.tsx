@@ -18,7 +18,7 @@ export default async function Destinations() {
     <>
     <Pagebanner
       header="Destinations"
-      destination="Here are our popular destinations"
+      body="Here are our popular destinations"
      />
       <section className="w-full min-h-screen">
      {/* <div className="max-w-6xl m-auto px-4 sm:px-6 lg:px-4 p-16 pb-8 sm:pb-12 flex flex-col space-y-8  mt-10 sm:mt-16 lg:mt-24">
