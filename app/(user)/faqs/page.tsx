@@ -3,6 +3,7 @@
 import { useState } from "react";
 import {  HiMinusCircle, HiPlusCircle } from "react-icons/hi";
 import Link from "next/link";
+import Pagebanner from "@/components/Pagebanner";
 
   
   export default function FAQs(){
@@ -16,7 +17,12 @@ import Link from "next/link";
     const [toggleSix, setToggleSix] = useState(false)
   
     return (
-      <section className="w-full min-h-screen">
+      <>
+      <Pagebanner
+         header="FAQ"
+         body="Have any qusetion in your minda ? Here are the fequent onse"
+      />
+        <section className="w-full min-h-screen">
         <div className="max-w-7xl m-auto px-4 sm:px-6 lg:px-8  p-16 pb-8 sm:pb-12  flex flex-col space-y-6 mt-10 sm:mt-16 lg:mt-24">
           <h2 className="text-4xl">FAQs.</h2>
 
@@ -225,4 +231,5 @@ import Link from "next/link";
           </div>
         </div>
       </section>
+      </>
     );}

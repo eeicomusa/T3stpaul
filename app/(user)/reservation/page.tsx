@@ -15,6 +15,7 @@ import { HiPhone, HiMail } from "react-icons/hi";
 
 import Image from "next/image";
 import { payments } from "@/components/constants";
+import Pagebanner from "@/components/Pagebanner";
 
 const Enquire = () => {
   const [sending, setSending] = useState(false);
@@ -70,7 +71,12 @@ const Enquire = () => {
   };
 
   return (
-    <section className="w-full min-h-screen">
+   <>
+      <Pagebanner
+        header="Reservations and contact "
+        body="Have anything in mind ,please fill the form below to react out to us or book a resrvation"
+      />
+      <section className="w-full min-h-screen">
       <div className="max-w-7xl m-auto px-4 sm:px-6 lg:px-8 flex flex-col space-y-6 mt-10 sm:mt-16 lg:mt-24 p-16 pb-8 sm:pb-12 ">
         <h2 className="text-4xl">Reservation.</h2>
         <div className="w-full flex flex-col gap-8 sm:gap-12 md:flex-row justify-between">
@@ -270,6 +276,7 @@ const Enquire = () => {
         </div>
       </div>
     </section>
+   </>
   );
 };
 

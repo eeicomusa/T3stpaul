@@ -5,7 +5,7 @@ import { urlForImage } from '@/sanity/lib/image';
 import { gallery } from '@/components/constants';
 import Gallery from '@/components/Gallery';
 import { Metadata } from 'next';
-
+import Pagebanner from '@/components/Pagebanner';
 export const metadata:Metadata = {
   title:"About Us",
   description:"Paulosafaris is a unique Kenya Tour Company based in Mombasa offering Kenya Coastal Beach Holidays, Adventures from Mombasa to Nairobi, East Africa Wildlife Tours from the Kenyan Coast, Tsavo Safaris from Mombasa and Maasai Mara Tours."
@@ -16,7 +16,12 @@ export default async function About() {
   const team = await getTeam();
 
   return (
-    <section className="w-full min-h-screen">
+  <>
+    <Pagebanner 
+      header='About Us'
+      body="Want to learn more About us ?"
+    />
+      <section className="w-full min-h-screen">
      <div className="max-w-7xl m-auto px-4 sm:px-6 lg:px-8 p-16 pb-8 sm:pb-12 flex flex-col space-y-6 mt-10 sm:mt-16 lg:mt-24">
         <div className="w-full flex flex-col gap-4 pb-2">
           <h2 className="text-4xl font-bold text-center">About Paulosafaris.</h2>
@@ -145,5 +150,6 @@ export default async function About() {
           
       </div>
     </section>
+     </>
   );
 }

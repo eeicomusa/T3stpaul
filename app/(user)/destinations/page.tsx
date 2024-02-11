@@ -10,11 +10,17 @@ import MombasaSafaris from '@/components/MombasaSafaris';
 import Gallery from '@/components/Gallery';
 import PreviewDestinations from '@/components/PreviewDestinations';
 import TestMonials from '@/components/Testmonials';
+import Pagebanner from '@/components/Pagebanner';import destination from '../../../sanity/destination-schema';
 export default async function Destinations() {
   const destinations = await getDestinations();
   // console.log("your destinations",destinations);
   return (
-    <section className="w-full min-h-screen">
+    <>
+    <Pagebanner
+      header="Destinations"
+      destination="Here are our popular destinations"
+     />
+      <section className="w-full min-h-screen">
      {/* <div className="max-w-6xl m-auto px-4 sm:px-6 lg:px-4 p-16 pb-8 sm:pb-12 flex flex-col space-y-8  mt-10 sm:mt-16 lg:mt-24">
         <h2 className="text-4xl">Destinations.</h2>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-3 gap-4 pt-4 pb-8">
@@ -69,5 +75,6 @@ export default async function Destinations() {
       <Gallery />
       <TestMonials/>
     </section>
+    </>
   );
 }
