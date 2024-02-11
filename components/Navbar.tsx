@@ -22,7 +22,7 @@ const Navbar = () => {
 
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full bg-white shadow-md z-10">
+    <header className="fixed top-0 left-0 right-0 w-full bg-white shadow-md z-20">
       <Banner />
       <nav className="py-2 flex items-center justify-between h-16 sm:h-[70px]  max-w-7xl m-auto px-4 sm:px-6 lg:px-8 ">
         <div className="rounded-md">

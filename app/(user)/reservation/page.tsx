@@ -16,7 +16,7 @@ import { HiPhone, HiMail } from "react-icons/hi";
 import Image from "next/image";
 import { payments } from "@/components/constants";
 import Pagebanner from "@/components/Pagebanner";
-
+import OpeningHours from "@/components/OpeningHours";
 const Enquire = () => {
   const [sending, setSending] = useState(false);
   const [fullname, setFullname] = useState("");
@@ -199,7 +199,7 @@ const Enquire = () => {
                 <p>info@paulosafaris.co.ke</p>
               </div>
             </div>
-
+           <OpeningHours />
             {/* Social icons */}
             <div className="flex gap-4 text-green">
               <Link

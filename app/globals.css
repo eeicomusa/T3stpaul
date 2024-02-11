@@ -176,8 +176,7 @@ body { background: var(--white); }
  * #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 15px; }
-
+.container { padding-inline: 15px; }cta
 .btn {
   color: var(--white);
   text-transform: uppercase;
@@ -718,6 +717,11 @@ body { background: var(--white); }
 
 .cta {
   background: #29ab87;
+  padding-block: var(--section-padding);
+}
+
+.ctaTop {
+  /* background: #29ab87; */
   padding-block: var(--section-padding);
 }
 
