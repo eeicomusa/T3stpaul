@@ -13,7 +13,7 @@ export default function MainPage () {
                        Create unforgatable memories with us , Book a journey with us today to experience the unforgatable
                     </p>
                     </div>
-                    <button className="btn btn-secondary">Contact Us !</button>
+                    <button className="btn btn-primary">Contact Us !</button>
                 </div>
             </section>
     )

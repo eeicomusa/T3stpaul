@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { BsWhatsapp, BsFacebook } from "react-icons/bs";
 import "../globals.css";
 import { Metadata } from "next";
+import { ToastContainer } from "react-toastify";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             className="fixed cursor-pointer flex items-center  justify-center bottom-[20px]  z-40 right-[10px] sm:right-[40px] bg-[#24d366] text-white rounded-full hover:opacity-80  shadow-lg h-[40px] w-[40px]">
             <BsWhatsapp className=" w-[22px] h-[22px]" />
           </Link>
-
+          <ToastContainer />
           <Link
             href="https://www.facebook.com/paulosafariskenya/"
             target="_blank"

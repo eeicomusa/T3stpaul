@@ -13,10 +13,24 @@ import { FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { HiPhone, HiMail } from "react-icons/hi";
 
+import * as Yup from 'yup';
+
 import Image from "next/image";
 import { payments } from "@/components/constants";
 import Pagebanner from "@/components/Pagebanner";
 import OpeningHours from "@/components/OpeningHours";
+
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+const validationSchema = Yup.object().shape({
+  fullname: Yup.string().required('Full Name is required'),
+  emailAddress: Yup.string().email('Invalid email address').required('Email Address is required'),
+  phone: Yup.string().required('Phone Number is required'),
+  country: Yup.string().required('Country is required'),
+  startDate: Yup.date().required('Start Date is required'),
+  destination: Yup.string().required('Destination is required'),
+});
 const Enquire = () => {
   const [sending, setSending] = useState(false);
   const [fullname, setFullname] = useState("");
@@ -30,6 +44,16 @@ const Enquire = () => {
 
   const sendEnquiry = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+     await validationSchema.validate({
+      fullname,
+      emailAddress,
+      phone,
+      country,
+      startDate,
+      destination,
+    }, { abortEarly: false });
+
     setSending(true);
 
     const templateParams = {
@@ -52,12 +76,11 @@ const Enquire = () => {
         "KSHa03k1BgZcHc_z8"!
       );
       setSending(false);
-      alert(
-        "Thank you for reaching out. We will get back to you ASAP!-@PAULOSAFARIS"
-      );
+      toast.success( "Thank you for reaching out. We will get back to you ASAP!-@PAULOSAFARIS" );
     } catch (error) {
       setSending(false);
-      alert("SORRY! An error occured.Please try again");
+      toast.error('Please fill in all required fields with valid information.');
+      // alert("SORRY! An error occured.Please try again");
     }
 
     setEmailAddress("");
@@ -79,10 +102,10 @@ const Enquire = () => {
       <section className="w-full min-h-screen">
       <div className="max-w-7xl m-auto px-4 sm:px-6 lg:px-8 flex flex-col space-y-6 mt-10 sm:mt-16 lg:mt-24 p-16 pb-8 sm:pb-12 ">
         <h2 className="text-4xl">Reservation.</h2>
-        <div className="w-full flex flex-col gap-8 sm:gap-12 md:flex-row justify-between">
+        <div className="w-full flex flex-col gap-8 sm:gap-12 md:flex-row justify-between ">
           {/* Booking Form */}
           <form
-            className="flex flex-col md:w-2/3 w-full"
+            className="flex flex-col md:w-2/3 w-full border-2 p-4 rounded-md"
             onSubmit={sendEnquiry}>
             <p className="text-xs pb-2 text-gray-500">
               A field marked with * is required.
@@ -129,7 +152,7 @@ const Enquire = () => {
                 disabled={sending}
                 onChange={(e) => setCountry(e.target.value)}
                 placeholder="Your Country"
-                className="py-3 px-6 my-2 outline-none border border-gray-300 text-sm placeholder:text-sm text-gray-500 placeholder:text-gray-500 w-full rounded-md shadow-sm"
+                className="py-3 px-6 my-2 outline-none border-1 border-black text-sm placeholder:text-sm text-gray-500 placeholder:text-gray-500 w-full rounded-md shadow-sm"
                 minLength={3}
               />
             </div>
@@ -142,7 +165,7 @@ const Enquire = () => {
                   value={startDate}
                   onChange={(e) => setStartDate(e.target.value)}
                   placeholder="Phone No."
-                  className="py-3 px-6 my-2 outline-none border text-gray-500 placeholder:text-gray-500 text-sm placeholder:text-sm border-gray-300 shadow-sm flex-1 rounded-md"
+                  className="py-3 px-6 my-2 outline-none border text-gray-500 placeholder:text-gray-500 text-sm placeholder:text-sm border-black shadow-sm flex-1 rounded-md"
                   required
                 />
               </div>
@@ -187,7 +210,7 @@ const Enquire = () => {
           </form>
 
           {/* Contacts Section */}
-          <div className="flex flex-col md:w-1/3 gap-6 w-full items-center sm:items-start">
+          <div className="flex flex-col md:w-1/3 gap-6 w-full items-center sm:items-start border-2 p-2 rounded">
             <div className="flex flex-col gap-2">
               <h4 className="text-2xl">Reach Us On</h4>
               <div className="text-gray-500 flex items-center justify-center gap-2">
