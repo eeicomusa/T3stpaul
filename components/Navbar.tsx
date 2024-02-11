@@ -95,12 +95,12 @@ const Navbar = () => {
                 onClick={handleToggle}>
                 <Link
                   className={
-                    pathname == "/safaris"
+                    pathname == "/destinations"
                       ? "text-white font-medium"
                       : " hover:text-white"
                   }
-                  href="/safaris">
-                  Safaris 
+                  href="/destinations">
+                  Destinations 
                 </Link>
               </motion.li>
 

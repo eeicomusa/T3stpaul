@@ -303,11 +303,11 @@ const footerlinks = [
     name: "ABOUT US",
   },
 
-  {
-    id: 4,
-    url: "/blog",
-    name: "BLOG",
-  },
+  // {
+  //   id: 4,
+  //   url: "/blog",
+  //   name: "BLOG",
+  // },
 
   {
     id: 5,
