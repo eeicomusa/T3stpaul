@@ -16,7 +16,7 @@ import Image from "next/image";
 import { payments } from "@/components/constants";
 import Pagebanner from "@/components/Pagebanner";
 import OpeningHours from "@/components/OpeningHours";
-import ContactForm  from "@/components/ContactForm";
+import ContactForm from "@/components/ContactForm"
 
 const Enquire = () => {
   
