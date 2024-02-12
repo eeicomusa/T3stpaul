@@ -16,7 +16,7 @@ import Image from "next/image";
 import { payments } from "@/components/constants";
 import Pagebanner from "@/components/Pagebanner";
 import OpeningHours from "@/components/OpeningHours";
-import ContactForm from "@/components/ContactForm"
+// import ContactForm from "@/components/ContactForm"
 
 const Enquire = () => {
   
@@ -31,7 +31,7 @@ const Enquire = () => {
         <h2 className="text-4xl">Reservation.</h2>
         <div className="w-full flex flex-col gap-8 sm:gap-12 md:flex-row justify-between ">
           {/* Booking Form */}
-            <ContactForm />
+            {/* <ContactForm /> */}
           {/* Contacts Section */}
           <div className="flex flex-col md:w-1/3 gap-6 w-full items-center sm:items-start border-2 p-2 rounded">
             <div className="flex flex-col gap-2">
