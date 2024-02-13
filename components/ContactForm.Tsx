@@ -76,7 +76,7 @@ export default function ContactForm(){
 
     return(
         <>
-              <form
+          <form
             className="flex flex-col md:w-2/3 w-full border-2 p-4 rounded-md"
             onSubmit={sendEnquiry}>
             <p className="text-xs pb-2 text-gray-500">
@@ -114,7 +114,7 @@ export default function ContactForm(){
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 placeholder="Your Phone Number (eg (+254) 711 431 122)"
-                className="py-3 px-6 my-2 outline-none border border-gray-300 text-sm placeholder:text-sm text-gray-500  placeholder:text-gray-500 w-full shadow-sm rounded-md"
+                className="py-4 px-6 my-2 outline-none border border-gray-300 text-sm placeholder:text-sm text-gray-500  placeholder:text-gray-500 w-full shadow-sm rounded-md"
                 required
                 minLength={10}
               />
