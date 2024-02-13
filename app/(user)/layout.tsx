@@ -30,7 +30,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             rel="noopener noreferrer"
             className="fixed cursor-pointer flex items-center  justify-center bottom-[20px]  z-40 right-[10px] sm:right-[40px] bg-[#24d366] text-white rounded-full hover:opacity-80  shadow-lg h-[40px] w-[40px]">
             <BsWhatsapp className=" w-[22px] h-[22px]" />
-          </Link>
+          </Link> 
+          {/* <button
+             className="fixed cursor-pointer flex items-center  justify-center bottom-[130px]  z-40 right-[10px] sm:right-[40px] bg-[#24d366] text-white rounded-full hover:opacity-80  shadow-lg h-[40px] w-[40px]"
+          >
+            <BsFacebook className="w-[22px] h-[22px]" /> 
+          </button> */}
           <ToastContainer />
           <Link
             href="https://www.facebook.com/paulosafariskenya/"
@@ -39,6 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             className="fixed cursor-pointer flex items-center  justify-center bottom-[70px] z-40 right-[10px] sm:right-[40px] bg-[#3b5998] text-white rounded-full hover:opacity-80  shadow-lg h-[40px] w-[40px]">
             <BsFacebook className="w-[22px] h-[22px]" />
           </Link>
+           
           <Footer />
           <BannerFooter />
         </main>

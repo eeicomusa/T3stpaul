@@ -11,6 +11,7 @@ import Gallery from '@/components/Gallery';
 import PreviewDestinations from '@/components/PreviewDestinations';
 import TestMonials from '@/components/Testmonials';
 import Pagebanner from '@/components/Pagebanner';import destination from '../../../sanity/destination-schema';
+import CommentSection from '@/components/CommentSection';
 export default async function Destinations() {
   const destinations = await getDestinations();
   // console.log("your destinations",destinations);
@@ -73,6 +74,7 @@ export default async function Destinations() {
       <MombasaSafaris/>
       <PreviewDestinations/>
       <Gallery />
+      <CommentSection/>
       <TestMonials/>
     </section>
     </>
