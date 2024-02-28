@@ -53,9 +53,9 @@ export default function Search () {
                     className="input-field"
                     />
                 </div>
-                <button type="submit" className="btn btn-secondary">
+                {/* <button type="submit" className="btn btn-secondary">
                     Inquire now
-                </button>
+                </button> */}
                 </form>
             </div>
             </section>
